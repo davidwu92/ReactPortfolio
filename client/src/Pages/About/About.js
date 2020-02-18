@@ -8,9 +8,9 @@ import './about.css'
 const About = () => {
   return(
     <>
-      <div className="container" id="pageContainer">
+      <div className="container" id="aboutContainer">
         <div id="pageTitle" className = "row center">
-          <h2>What I do</h2>
+          <h2>About me</h2>
           {/* <h5>(Yes, the cards are clickable.)</h5> */}
         </div>
         {/* MARKETABLE SKILLS ROW */}
@@ -73,15 +73,12 @@ const About = () => {
                   <span className="card-title activator grey-text text-darken-4 center">Adaptable Learner.<i className="material-icons right">more_vert</i></span>
                 </div>
                 <div className="card-reveal">
-                  <span className="card-title grey-text text-darken-4">Responsive Web Design<i className="material-icons right">close</i></span>
-                  <p>I am cool, confident, and comfortable writing functioning code in the back end. The same is true for coding the front end.</p>
-                  <p>My web apps are responsive, designed to be viewable from any screen.</p>
+                  <span className="card-title grey-text text-darken-4">Adaptable Learner<i className="material-icons right">close</i></span>
+                  <p>TEXT HERE    </p>
+                  <p>TEXT HERE    </p>
                 </div>
               </div>
           </div>
-        </div>
-        <div className="row">
-
         </div>
       </div>
     </>
