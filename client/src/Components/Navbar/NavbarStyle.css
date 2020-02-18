@@ -1,0 +1,29 @@
+#bottomNav {
+  background-color: black;
+}
+
+#nav {
+  font-family: 'Quantico', cursive;
+  padding-left: 20px;
+}
+
+#navContent {
+  font-family: 'Quantico', cursive;
+}
+
+#hovEffect:hover {
+  background-color:grey;
+  cursor: pointer;
+}
+
+
+/* SMALL SCREEN MEDIA QUERIES */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    #nav {
+      font-family: 'Quantico', cursive;
+      padding-left: 0px;
+    }
+}
