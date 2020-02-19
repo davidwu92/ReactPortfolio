@@ -1,11 +1,27 @@
 .container {
   height: 100vh;
 }
+
+section{
+  height: auto ;
+}
+/* SMALL SCREEN STYLING */
+@media only screen 
+and (min-device-width : 300px) 
+and (max-device-width : 600px)  {
+  #about {
+    height: 250vh;
+  }
+  #portfolio {
+    height: 100vh;
+  }
+}
+
 #pageTitle {
   margin-top: 8vh;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Source Code Pro', cursive;
 }
 
