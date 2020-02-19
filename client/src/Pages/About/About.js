@@ -77,8 +77,8 @@ const About = () => {
                 </div>
                 <div className="card-reveal">
                   <span className="card-title grey-text text-darken-4" id="cardRevealTitle">Adaptable Learner<i className="material-icons right">close</i></span>
-                  <p>The climate in the tech world is incredibly mutable. Denizens and newcomers must learn to adapt quickly to the ever-shifting trends and standards.</p>
-                  <p>I'm no stranger to seeking resources and learning new technologies. All the skills needed to code my portfolio projects (and this site) were developed over the course of six months. With each passing week, I grow into a stronger, better-practiced developer—and I only ever want to learn more.</p>
+                  <p>We as developers must learn to adapt to intermittent shifts in tech trends and industry standards. I'm no stranger to navigating steep learning curves, nor am I to diving into unfamiliar technologies.</p>
+                  <p>All the skills needed to craft my portfolio projects (and this site) were developed swiftly over the course of six months. I've always been a bit of a masochist when it came to wrestling with higher level math and physics class content—new coding concepts have proven to be no different.</p>
                 </div>
               </div>
           </div>
