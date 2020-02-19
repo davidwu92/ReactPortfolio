@@ -22,7 +22,7 @@ const About = () => {
                   <img className="activator" src={developer}/>
                 </div>
                 <div className="card-content">
-                  <span className="card-title activator grey-text text-darken-4 center" id="cardTitle">Innovative Web Apps.<i className="material-icons right">more_vert</i></span>
+                  <span className="card-title activator grey-text text-darken-4 center" id="cardTitle">Innovative Web Apps.<i className="material-icons right" id="threeDots">more_vert</i></span>
                 </div>
                 <div className="card-reveal">
                   <span className="card-title grey-text text-darken-4" id="cardRevealTitle">Web App Innovator<i className="material-icons right">close</i></span>
@@ -38,7 +38,7 @@ const About = () => {
                   <img className="activator" src={gears}/>
                 </div>
                 <div className="card-content">
-                  <span className="card-title activator grey-text text-darken-4 center" id="cardTitle">Javascript Developer.<i className="material-icons right">more_vert</i></span>
+                  <span className="card-title activator grey-text text-darken-4 center" id="cardTitle">Javascript Developer.<i className="material-icons right" id="threeDots">more_vert</i></span>
                 </div>
                 <div className="card-reveal">
                   <span className="card-title grey-text text-darken-4" id="cardRevealTitle">JS Developer<i className="material-icons right">close</i></span>
@@ -54,7 +54,7 @@ const About = () => {
                   <img className="activator" src={responsive}/>
                 </div>
                 <div className="card-content">
-                  <span className="card-title activator grey-text text-darken-4 center" id="cardTitle">Responsive Web Design.<i className="material-icons right">more_vert</i></span>
+                  <span className="card-title activator grey-text text-darken-4 center" id="cardTitle">Responsive Designs.<i className="material-icons right" id="threeDots">more_vert</i></span>
                 </div>
                 <div className="card-reveal">
                   <span className="card-title grey-text text-darken-4" id="cardRevealTitle">Responsive Web Design<i className="material-icons right">close</i></span>
@@ -70,7 +70,7 @@ const About = () => {
                   <img className="activator" src={adaptable}/>
                 </div>
                 <div className="card-content">
-                  <span className="card-title activator grey-text text-darken-4 center" id="cardTitle">Adaptable Learner.<i className="material-icons right">more_vert</i></span>
+                  <span className="card-title activator grey-text text-darken-4 center" id="cardTitle">Adaptable Learner.<i className="material-icons right" id="threeDots">more_vert</i></span>
                 </div>
                 <div className="card-reveal">
                   <span className="card-title grey-text text-darken-4" id="cardRevealTitle">Adaptable Learner<i className="material-icons right">close</i></span>
