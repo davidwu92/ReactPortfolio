@@ -22,7 +22,7 @@ const About = () => {
               {/* INNOVATOR */}
               <div className="card" id="card">
                 <div className="card-image waves-effect waves-block waves-light">
-                  <img className="activator" src={developer}/>
+                  <img id="aboutImg" className="activator" src={developer}/>
                 </div>
                 <div className="card-content">
                   <span className="card-title activator grey-text text-darken-4 center" id="cardTitle">Innovative Web Apps.<i className="material-icons right" id="threeDots">more_vert</i></span>
@@ -38,7 +38,7 @@ const About = () => {
               {/* JAVASCRIPT DEVELOPER */}
               <div className="card" id="card">
                 <div className="card-image waves-effect waves-block waves-light">
-                  <img className="activator" src={gears}/>
+                  <img id="aboutImg" className="activator" src={gears}/>
                 </div>
                 <div className="card-content">
                   <span className="card-title activator grey-text text-darken-4 center" id="cardTitle">Javascript Developer.<i className="material-icons right" id="threeDots">more_vert</i></span>
@@ -54,7 +54,7 @@ const About = () => {
               {/* RESPONSIVE FRONT-END */}
               <div className="card" id="card">
                 <div className="card-image waves-effect waves-block waves-light">
-                  <img className="activator" src={responsive}/>
+                  <img id="aboutImg" className="activator" src={responsive}/>
                 </div>
                 <div className="card-content">
                   <span className="card-title activator grey-text text-darken-4 center" id="cardTitle">Responsive Designs.<i className="material-icons right" id="threeDots">more_vert</i></span>
@@ -70,7 +70,7 @@ const About = () => {
                 {/* PEOPLE-PERSON */}
               <div className="card" id="card">
                 <div className="card-image waves-effect waves-block waves-light">
-                  <img className="activator" src={adaptable}/>
+                  <img id="aboutImg" className="activator" src={adaptable}/>
                 </div>
                 <div className="card-content">
                   <span className="card-title activator grey-text text-darken-4 center" id="cardTitle">Adaptable Learner.<i className="material-icons right" id="threeDots">more_vert</i></span>

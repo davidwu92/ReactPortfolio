@@ -2,7 +2,7 @@
   max-width: 100%;
   height: 40vh
 }
-/* MEDIUM SCREEN STYLING */
+/* SMALL SCREEN STYLING */
 @media only screen 
 and (min-device-width : 300px) 
 and (max-device-width : 600px)  {
@@ -10,8 +10,6 @@ and (max-device-width : 600px)  {
     height: auto;
   }
 }
-
-
 /* MEDIUM SCREEN STYLING */
 @media only screen 
 and (min-device-width : 601px) 
@@ -41,7 +39,7 @@ and (max-device-width : 1367px)  {
   font-size: 24px;
 }
 
-img {
+#aboutImg {
   /* max-width:100%; */
   filter: grayscale(100%);
   max-height: 100%;
