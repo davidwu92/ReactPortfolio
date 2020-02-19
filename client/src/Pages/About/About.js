@@ -4,14 +4,17 @@ import gears from './gears.png'
 import responsive from './responsive.png'
 import adaptable from './adaptable.jpg'
 import './about.css'
+import Navbar from '../../Components/Navbar'
 
 const About = () => {
   return(
     <>
+      <Navbar/>
       <div className="container" id="aboutContainer">
         <div id="pageTitle" className = "row center">
           <h2>About me</h2>
-          {/* <h5>(Yes, the cards are clickable.)</h5> */}
+          <h6>I used to teach math and physics at a one-to-one school specializing in students with extremely diverse IEP's. </h6>
+          <h6>Those days are behind me, and I've transformed into a full-stack web developer with a drastically expanded skillset. </h6>
         </div>
         {/* MARKETABLE SKILLS ROW */}
         <div className="row">
@@ -58,8 +61,8 @@ const About = () => {
                 </div>
                 <div className="card-reveal">
                   <span className="card-title grey-text text-darken-4" id="cardRevealTitle">Responsive Web Design<i className="material-icons right">close</i></span>
-                  <p>I am cool, confident, and comfortable writing functioning code in the back end. The same is true for coding the front end.</p>
-                  <p>My web apps are responsive, designed to be viewable from any screen. This site is completely </p>
+                  <p>I am cool, confident, and comfortable writing functioning code in the back end. The same is true for working with UI/UX elements in the front end.</p>
+                  <p>My full-stack web apps are responsive, designed to be viewed from any device.</p>
                 </div>
               </div>
           </div>
@@ -74,8 +77,8 @@ const About = () => {
                 </div>
                 <div className="card-reveal">
                   <span className="card-title grey-text text-darken-4" id="cardRevealTitle">Adaptable Learner<i className="material-icons right">close</i></span>
-                  <p>TEXT HERE    </p>
-                  <p>TEXT HERE    </p>
+                  <p>The climate in the tech world is incredibly mutable. Denizens and newcomers must learn to adapt quickly to the ever-shifting trends and standards.</p>
+                  <p>I'm no stranger to seeking resources and learning new technologies. All the skills needed to code my portfolio projects (and this site) were developed over the course of six months. With each passing week, I grow into a stronger, better-practiced developer—and I only ever want to learn more.</p>
                 </div>
               </div>
           </div>

@@ -17,21 +17,17 @@ function App() {
     <>
       <Router>
         <div>
-        {/* <Navbar/> */}
           <section id="home">
             <Navbar/>
             <Home/>
           </section>
           <section id="about">
-            <Navbar/>
             <About />
           </section>
           <section id="portfolio">
-            <Navbar/>
             <Portfolio />
           </section>
           <section id="resume">
-            <Navbar/>
             <Resume />
           </section>
         </div>

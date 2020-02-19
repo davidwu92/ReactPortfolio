@@ -4,6 +4,16 @@
 }
 /* MEDIUM SCREEN STYLING */
 @media only screen 
+and (min-device-width : 300px) 
+and (max-device-width : 600px)  {
+  #aboutContainer {
+    height: auto;
+  }
+}
+
+
+/* MEDIUM SCREEN STYLING */
+@media only screen 
 and (min-device-width : 601px) 
 and (max-device-width : 994px)  {
   .card-image{

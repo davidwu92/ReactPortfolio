@@ -4,7 +4,7 @@ import './home.css'
 const Home = () => {
   return(
     <>
-      <div className="container" id="pageContainer">
+      <div className="container" id="homeContainer">
         <div id="whiteSpace">
           {/* Space */}
         </div>
