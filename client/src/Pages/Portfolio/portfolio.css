@@ -1,4 +1,31 @@
-/* img {
-  width: 60vw;
-  height: 60vh;
+#portfolioImg{
+  position: absolute;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+#carouselText {
+  font-weight: bold;
+}
+/* 
+#item1 {
+  background-image: url("./Harmonize.jpg")
+}
+#item2 {
+  background-image: url("./LAF.jpg")
+}
+#item3 {
+  background-image: url("./ReactScraper.jpg")
+}
+#item4 {
+  background-image: url("./CrystalCollector.jpg")
+}
+#item5 {
+  background-image: url("./TrainSimulator.jpg")
+}
+#item6 {
+  background-image: url("./TriviaGame.jpg")
+}
+#item7 {
+  background-image: url("./AnimeGifFinder.jpg")
 } */
