@@ -32,122 +32,155 @@ const Portfolio =()=>{
       <div className="container" id="pageContainer">
         <div id="pageTitle" className = "row center">
           <h1>Portfolio</h1>
-          <h6>Here's some of my work.</h6>
+          <h6>Drag left or right to peruse my work. Click on the screenshot for more info.</h6>
         </div>
         {/* CAROUSEL */}
         <div class="carousel carousel-slider" onChange={onSlide}>
-          <div class="carousel-fixed-item center">
-            {/* <a class="btn waves-effect white grey-text darken-text-2"></a> */}
-          </div>
+          {/* <div class="carousel-fixed-item center">
+            <a class="btn waves-effect white grey-text darken-text-2"></a>
+          </div> */}
+
           <div class="carousel-item" id="item1" href="#one!">
-            <img id="portfolioImg" alt="Harmonize Screenshot" src={harmonize}/>
-            <div className="row">
-              <div className="col s12 m12 l12">
-                <h4 className="left">
+            <div className="card" id="card">
+              <div id="pCardImage" className="card-image">
+                  <img  alt="Harmonize Screenshot" className="activator" src={harmonize}/>
+                  <i className="material-icons activator right" id="makeOpaque">more_vert</i>
+              </div>
+              <div className="card-reveal" id="makeOpaque">
+                <span className="card-title grey-text text-darken-4" id="cardRevealTitle"><h5>Harmonize</h5><i className="material-icons right">close</i></span>
+                <h6 id="carouselText">
+                  Harmonize is a networking application, not unlike Facebook or LinkedIn, specialized for musicians such that users can...
+                  <li>consolidate recordings/performances into their profiles as a display of talent.</li>
+                  <li>add/remove instruments/skills tags, as well as search for other users by these tags.</li>
+                  <li>create/edit/remove postings for upcoming gig opportunities.</li>
+                </h6>
+                <h5 className="left">
                   <a id="carouselLink" className="white-text btn black" href="https://harmonizers.herokuapp.com/" target="_blank">
                     Visit Harmonize
                   </a>
-                </h4>
-              </div>
-              <div className="col s12 m6 l6">
-                <h6 id="carouselText">My idea for this app was to create a space for musicians to join. </h6>
-              </div>
-            </div>              
-          </div>
-
-          <div class="carousel-item" id="item2" href="#two!">
-            <img id="portfolioImg" alt="LAF Screenshot" src={laf}/>
-            <div className="row">
-              <div className="col s12 m12 l12">
-                <h4 className="left">              
-                  <a id="carouselLink" className="white-text btn black" href="https://the-laf-app.herokuapp.com/" target="_blank">
-                    Visit LAF
-                  </a>
-                </h4>
-              </div>
-              <div className="col s12 m6 l6">
-                <h6 id="carouselText">This is Harmonize.</h6>
+                </h5>
               </div>
             </div>
           </div>
-          <div class="carousel-item" id="item3" href="#three!">
-            <img id="portfolioImg" alt="React Scraper Screenshot" src={reactScraper}/>
-            <div className="row">
-              <div className="col s12 m12 l12">
-                <h4 className="left">
-                  <a id="carouselLink" className="white-text btn black" href="https://lit-lake-23677.herokuapp.com/" target="_blank">
-                    Visit Google Books Scraper
+
+          <div class="carousel-item" id="item2" href="#two!">
+            <div className="card" id="card">
+              <div id="pCardImage" className="card-image">
+                  <img  alt="Harmonize Screenshot" className="activator" src={laf}/>
+                  <i className="material-icons activator right" id="makeOpaque">more_vert</i>
+              </div>
+              <div className="card-reveal" id="makeOpaque">
+                <span className="card-title grey-text text-darken-4" id="cardRevealTitle"><h5>Lost And Found</h5><i className="material-icons right">close</i></span>
+                <h6 id="carouselText">
+                  LAF is a thing
+                </h6>
+                <h5 className="left">
+                  <a id="carouselLink" className="white-text btn black" href="https://the-laf-app.herokuapp.com/" target="_blank">
+                    Visit LAF
                   </a>
-                </h4>
+                </h5>
               </div>
-              <div className="col s12 m6 l6">
-                <h6 id="carouselText">This is Harmonize.</h6>
+            </div>
+          </div>
+
+          <div class="carousel-item" id="item3" href="#three!">
+            <div className="card" id="card">
+              <div id="pCardImage" className="card-image">
+                  <img  alt="Harmonize Screenshot" className="activator" src={reactScraper}/>
+                  <i className="material-icons activator right" id="makeOpaque">more_vert</i>
               </div>
-            </div>       
+              <div className="card-reveal" id="makeOpaque">
+                <span className="card-title grey-text text-darken-4" id="cardRevealTitle"><h5>Mongo Scraper</h5><i className="material-icons right">close</i></span>
+                <h6 id="carouselText">
+                  reactScraper is a thing
+                </h6>
+                <h5 className="left">
+                  <a id="carouselLink" className="white-text btn black" href="https://lit-lake-23677.herokuapp.com/" target="_blank">
+                    Visit Mongo Scraper
+                  </a>
+                </h5>
+              </div>
+            </div>
           </div>
 
           <div class="carousel-item" id="item4" href="#four!">
-            <img id="portfolioImg" alt="Crystal Collector Screenshot" src={crystalCollector}/>
-            <div className="row">
-              <div className="col s12 m12 l12">
-                <h4 className="left">
+            <div className="card" id="card">
+              <div id="pCardImage" className="card-image">
+                  <img  alt="Harmonize Screenshot" className="activator" src={crystalCollector}/>
+                  <i className="material-icons activator right" id="makeOpaque">more_vert</i>
+              </div>
+              <div className="card-reveal" id="makeOpaque">
+                <span className="card-title grey-text text-darken-4" id="cardRevealTitle"><h5>Crystal Collector</h5><i className="material-icons right">close</i></span>
+                <h6 id="carouselText">
+                  crystalCollector is a thing
+                </h6>
+                <h5 className="left">
                   <a id="carouselLink" className="white-text btn black" href="https://davidwu92.github.io/Crystal-Collector-Math/" target="_blank">
                     Visit Crystal Collector
                   </a>
-                </h4>
+                </h5>
               </div>
-              <div className="col s12 m6 l6">
-                <h6 id="carouselText">This is Harmonize.</h6>
-              </div>
-            </div>                   
+            </div>
           </div>
 
           <div class="carousel-item" id="item5" href="#five!">
-            <img id="portfolioImg" alt="Train Simulator Screenshot" src={trainSimulator}/>
-            <div className="row">
-              <div className="col s12 m12 l12">
-                <h4 className="left">
+            <div className="card" id="card">
+              <div id="pCardImage" className="card-image">
+                  <img  alt="Harmonize Screenshot" className="activator" src={trainSimulator}/>
+                  <i className="material-icons activator right" id="makeOpaque">more_vert</i>
+              </div>
+              <div className="card-reveal" id="makeOpaque">
+                <span className="card-title grey-text text-darken-4" id="cardRevealTitle"><h5>Train Simulator</h5><i className="material-icons right">close</i></span>
+                <h6 id="carouselText">
+                  trainSimulator is a thing
+                </h6>
+                <h5 className="left">
                   <a id="carouselLink" className="white-text btn black" href="https://davidwu92.github.io/TrainSimulator/" target="_blank">
                     Visit Train Simulator
                   </a>
-                </h4>
+                </h5>
               </div>
-              <div className="col s12 m6 l6">
-                <h6 id="carouselText">This is Harmonize.</h6>
-              </div>
-            </div>       
+            </div>
           </div>
 
           <div class="carousel-item" id="item6" href="#six!">
-            <img id="portfolioImg" alt="Zelda Trivia Screenshot" src={triviaGame}/>
-            <div className="row">
-              <div className="col s12 m12 l12">
-                <h4 className="left">
+            <div className="card" id="card">
+              <div id="pCardImage" className="card-image">
+                  <img  alt="Harmonize Screenshot" className="activator" src={triviaGame}/>
+                  <i className="material-icons activator right" id="makeOpaque">more_vert</i>
+              </div>
+              <div className="card-reveal" id="makeOpaque">
+                <span className="card-title grey-text text-darken-4" id="cardRevealTitle"><h5>Zelda Trivia Game</h5><i className="material-icons right">close</i></span>
+                <h6 id="carouselText">
+                  triviaGame is a thing
+                </h6>
+                <h5 className="left">
                   <a id="carouselLink" className="white-text btn black" href="https://davidwu92.github.io/TriviaGame/" target="_blank">
                     Visit Zelda Trivia
                   </a>
-                </h4>
+                </h5>
               </div>
-              <div className="col s12 m6 l6">
-                <h6 id="carouselText">This is Harmonize.</h6>
-              </div>
-            </div> 
+            </div>
           </div>
 
           <div class="carousel-item" id="item7" href="#seven!">
-            <img id="portfolioImg" alt="Anime GIF Finder Screenshot" src={animeGif}/>
-            <div className="row">
-              <div className="col s12 m12 l12">
-                <h4 className="left">
-                  <a id="carouselLink" className="white-text btn black" href="https://davidwu92.github.io/GIF-APIs/" target="_blank">
-                    Visit GIF Finder
+            <div className="card" id="card">
+              <div id="pCardImage" className="card-image">
+                  <img  alt="Harmonize Screenshot" className="activator" src={animeGif}/>
+                  <i className="material-icons activator right" id="makeOpaque">more_vert</i>
+              </div>
+              <div className="card-reveal" id="makeOpaque">
+                <span className="card-title grey-text text-darken-4" id="cardRevealTitle"><h5>Anime Gif Finder</h5><i className="material-icons right">close</i></span>
+                <h6 id="carouselText">
+                  animeGif is a thing
+                </h6>
+                <h5 className="left">
+                  <a id="carouselLink" className="white-text btn black" href="https://davidwu92.github.io/TriviaGame/" target="_blank">
+                    Visit Gif Finder
                   </a>
-                </h4>
+                </h5>
               </div>
-              <div className="col s12 m6 l6">
-                <h6 id="carouselText">This is Harmonize.</h6>
-              </div>
-            </div> 
+            </div>  
           </div>
 
         </div>
