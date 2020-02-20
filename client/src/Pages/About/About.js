@@ -14,7 +14,7 @@ const About = () => {
         <div id="pageTitle" className = "row center">
           <h2>About me</h2>
           <h6>I used to teach math and physics at a one-to-one school specializing in students with extremely diverse IEP's. </h6>
-          <h6>Those days are behind me, and I've transformed into a full-stack web developer with a drastically expanded skillset. </h6>
+          <h6>Those days are behind me, and I've transformed into a full-stack web developer with a drastically-expanded skillset. </h6>
         </div>
         {/* MARKETABLE SKILLS ROW */}
         <div className="row">
