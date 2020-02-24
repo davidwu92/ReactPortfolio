@@ -64,6 +64,10 @@ const Portfolio =()=>{
                   <a id="carouselLink" className="white-text btn black" href="https://harmonizers.herokuapp.com/" target="_blank">
                     Visit Harmonize
                   </a>
+                  <span>  </span>
+                  <a id="carouselLink" className="white-text btn black" href="https://github.com/davidwu92/Harmonize2" target="_blank">
+                    Visit Github Repo
+                  </a>
                 </h5>
               </div>
             </div>
@@ -85,6 +89,10 @@ const Portfolio =()=>{
                 <h5 className="left">
                   <a id="carouselLink" className="white-text btn black" href="https://the-laf-app.herokuapp.com/" target="_blank">
                     Visit LAF
+                  </a>
+                  <span>  </span>
+                  <a id="carouselLink" className="white-text btn black" href="https://github.com/davidwu92/Project-Two" target="_blank">
+                    Visit Github Repo
                   </a>
                 </h5>
               </div>
@@ -108,6 +116,10 @@ const Portfolio =()=>{
                   <a id="carouselLink" className="white-text btn black" href="https://lit-lake-23677.herokuapp.com/" target="_blank">
                     Visit React Scraper
                   </a>
+                  <span>  </span>
+                  <a id="carouselLink" className="white-text btn black" href="https://github.com/davidwu92/ReactGoogleBooks" target="_blank">
+                    Visit Github Repo
+                  </a>
                 </h5>
               </div>
             </div>
@@ -130,6 +142,10 @@ const Portfolio =()=>{
                 <h5 className="left">
                   <a id="carouselLink" className="white-text btn black" href="https://davidwu92.github.io/Crystal-Collector-Math/" target="_blank">
                     Visit Crystal Collector
+                  </a>
+                  <span>  </span>
+                  <a id="carouselLink" className="white-text btn black" href="https://github.com/davidwu92/Crystal-Collector-Math" target="_blank">
+                    Visit Github Repo
                   </a>
                 </h5>
               </div>
@@ -157,6 +173,10 @@ const Portfolio =()=>{
                   <a id="carouselLink" className="white-text btn black" href="https://davidwu92.github.io/TrainSimulator/" target="_blank">
                     Visit Train Simulator
                   </a>
+                  <span>  </span>
+                  <a id="carouselLink" className="white-text btn black" href="https://github.com/davidwu92/TrainSimulator" target="_blank">
+                    Visit Github Repo
+                  </a>
                 </h5>
               </div>
             </div>
@@ -180,6 +200,10 @@ const Portfolio =()=>{
                   <a id="carouselLink" className="white-text btn black" href="https://davidwu92.github.io/TriviaGame/" target="_blank">
                     Visit Zelda Trivia
                   </a>
+                  <span>  </span>
+                  <a id="carouselLink" className="white-text btn black" href="https://github.com/davidwu92/TriviaGame" target="_blank">
+                    Visit Github Repo
+                  </a>
                 </h5>
               </div>
             </div>
@@ -199,6 +223,10 @@ const Portfolio =()=>{
                 <h5 className="left">
                   <a id="carouselLink" className="white-text btn black" href="https://davidwu92.github.io/GIF-APIs/" target="_blank">
                     Visit Gif Finder
+                  </a>
+                  <span>  </span>
+                  <a id="carouselLink" className="white-text btn black" href="https://github.com/davidwu92/GIF-APIs" target="_blank">
+                    Visit Github Repo
                   </a>
                 </h5>
               </div>
@@ -221,7 +249,7 @@ const Portfolio =()=>{
                 </h6>
                 <h5 className="left">
                   <a id="carouselLink" className="white-text btn black" href="https://github.com/davidwu92/bamazon" target="_blank">
-                    Visit the Bamazon Repo
+                    Visit Github Repo
                   </a>
                 </h5>
               </div>
