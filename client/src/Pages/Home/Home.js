@@ -3,7 +3,7 @@ import './home.css'
 
 const Home = () => {
   return(
-    <>
+    <div id="homePage">
       <div className="container" id="homeContainer">
         <div id="whiteSpace">
           {/* Space */}
@@ -14,7 +14,7 @@ const Home = () => {
           <h4 className="center">I am a web developer.</h4>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
