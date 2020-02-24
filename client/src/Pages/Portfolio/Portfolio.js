@@ -57,6 +57,7 @@ const Portfolio =()=>{
                   <li>display recordings and performances into their public profile.</li>
                   <li>add/remove instruments/skills tags and search for other users by these tags.</li>
                   <li>create, edit, and remove postings for gig opportunities.</li>
+                  <br></br>
                   As a long-time pianist, coding this app became a huge passion project. I've put well over a hundred hours into this project alone, and I am responsible for front- and back-end development of the Search, Register, Gig Posting, and edit Profile features.
                 </h6>
                 <h5 className="left">
@@ -77,6 +78,8 @@ const Portfolio =()=>{
                 <span className="card-title grey-text text-darken-4"><h5 id="profileCardRevealTitle">Lost And Found<i className="material-icons right">close</i></h5></span>
                 <h6 id="carouselText">
                   LAF is a full-stack Express-Sequelize app designed to digitize lost and found offices in any densely-populated settings and events.
+                </h6>
+                <h6 id="carouselText">
                   I was the SCRUM master and repository owner, and I was responsible for much of the back end code: posting "found" items, building the database, and adding event settings.
                 </h6>
                 <h5 className="left">
@@ -96,8 +99,10 @@ const Portfolio =()=>{
               <div className="card-reveal" id="portfolioCardReveal">
                 <span className="card-title grey-text text-darken-4"><h5 id="profileCardRevealTitle">React Books Scraper<i className="material-icons right">close</i></h5></span>
                 <h6 id="carouselText">
-                  React Books is a quick application I wrote that scrapes information from Google Books that match the keywords searched. 
-                  It was my first full-stack MERN (Mongo, react, express, node) application, written with plenty of UI/UX "don't"s but fully functional nonetheless.
+                  React Books is a quick application I wrote that takes the user's search query, then scrapes and saves information from Google Books. 
+                </h6>
+                <h6 id="carouselText">
+                  It was my first full-stack MERN (Mongo, react, express, node) application, written for educational and experimental purposes.
                 </h6>
                 <h5 className="left">
                   <a id="carouselLink" className="white-text btn black" href="https://lit-lake-23677.herokuapp.com/" target="_blank">
@@ -116,9 +121,11 @@ const Portfolio =()=>{
               <div className="card-reveal" id="portfolioCardReveal">
                 <span className="card-title grey-text text-darken-4"><h5 id="profileCardRevealTitle">Crystal Collector<i className="material-icons right">close</i></h5></span>
                 <h6 id="carouselText">
-                  This simple math game was one of the first applications I've ever coded back in September of 2019 (other than some guessing games like Hangman and a Psychic Game).
+                  This simple math game was one of the first applications I had ever created back in September of 2019 (other than some guessing games like Hangman and a Psychic Game).
                   It was a fun logic exercise that used HTML, CSS, and Javascript to create a front-end web app.
-                  There was once a time when I was very proud of this project! I've grown much since then.
+                </h6>
+                <h6 id="carouselText">
+                  While the application's styling shows apparent infancy in my mastery of CSS, I was reasonably proud of the JS logic behind this game! I've grown much as a developer since then.
                 </h6>
                 <h5 className="left">
                   <a id="carouselLink" className="white-text btn black" href="https://davidwu92.github.io/Crystal-Collector-Math/" target="_blank">
@@ -137,10 +144,14 @@ const Portfolio =()=>{
               <div className="card-reveal" id="portfolioCardReveal">
                 <span className="card-title grey-text text-darken-4"><h5 id="profileCardRevealTitle">Train Simulator<i className="material-icons right">close</i></h5></span>
                 <h6 id="carouselText">
-                  The Train Simulator is a front-end web application that simulates departures and arrivals at a hypothetical train station.
-                  The application uses axios requests and firebase collections to keep track of train times.
-                  I was especially proud of algebra-heavy code I wrote to perform calculations involving time.
-                  At least I was, until I learned that Moment.JS existed.
+                  The Train Simulator is a front-end web application that simulates departures and arrivals for a hypothetical train station using Axios requests and Firebase collections.
+                </h6>
+                <h6 id="carouselText">
+                  The assignment was given to us only a few weeks into our class, and I found myself spending many hours writing tediously algebra-heavy code based solely on UNIX timestamps to calculate time-based events: first departures, intervals between departures and arrivals, etc.
+                  I was so very proud of the JS code I wrote that day, as it was fully functional and performed accurate time calculations for my trains.
+                </h6>
+                <h6 id="carouselText">
+                  At least I was, until I learned that Moment.JS existed in our next class session.
                 </h6>
                 <h5 className="left">
                   <a id="carouselLink" className="white-text btn black" href="https://davidwu92.github.io/TrainSimulator/" target="_blank">
@@ -160,7 +171,9 @@ const Portfolio =()=>{
                 <span className="card-title grey-text text-darken-4"><h5 id="profileCardRevealTitle">Zelda Trivia Game<i className="material-icons right">close</i></h5></span>
                 <h6 id="carouselText">
                   The Zelda Trivia Game is a front-end app I built one weekend from HTML, CSS and Javascript.
-                  While it isn't the smoothest JS logic or the prettiest CSS I've ever written, Zelda Trivia is one of many early projects I coded that show honest growth and provide snapshots of my early Javascript/DOM manipulation skills.
+                </h6>
+                <h6 id="carouselText">
+                  While it isn't the smoothest JS logic or the prettiest CSS I've ever written, Zelda Trivia is one of many early projects I created that show honest growth and provide snapshots of my early Javascript/DOM manipulation skills.
                   In retrospect, the app is a pretty good effort for the five week mark!
                 </h6>
                 <h5 className="left">
@@ -202,6 +215,8 @@ const Portfolio =()=>{
                 <h6 id="carouselText">
                   As one of my first backend CLI applications, Bamazon uses the terminal to simulate a storefront.
                   It uses Javascript logic, a MySQL database, and inquirer.js for customer interactions in the terminal.
+                </h6>
+                <h6 id="carouselText">
                   The user (customer) has the ability to place orders in the terminal, which in turn depletes the items in stock at the Bamazon warehouse and calculates a purchase total.
                 </h6>
                 <h5 className="left">
