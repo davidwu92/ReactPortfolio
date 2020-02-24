@@ -7,10 +7,16 @@
 #carouselText {
   font-weight: bold;
   font-size: 1rem;
+  /* line-height:  */
 }
 
-#makeOpaque {
-  opacity: 0.9;
+#portfolioCardReveal {
+  opacity: 0.85;
+  padding: 14px;
+}
+
+#profileCardRevealTitle {
+  margin-top: 0px
 }
 
 #pCardImage{
