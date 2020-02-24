@@ -9,6 +9,7 @@ import laf from './LAF.png'
 import trainSimulator from './TrainSimulator.png'
 import triviaGame from './TriviaGame.png'
 import reactScraper from './ReactScraper.png'
+import bamazon from './Bamazon.png'
 
 const Portfolio =()=>{
 
@@ -194,17 +195,18 @@ const Portfolio =()=>{
           <div class="carousel-item" id="item8" href="#eight!">
             <div className="card" id="card">
               <div id="pCardImage" className="card-image">
-                  <img  alt="Harmonize Screenshot" className="activator" src={animeGif}/>
+                  <img  alt="Harmonize Screenshot" className="activator" src={bamazon}/>
               </div>
               <div className="card-reveal" id="portfolioCardReveal">
-                <span className="card-title grey-text text-darken-4"><h5 id="profileCardRevealTitle">Anime Gif Finder<i className="material-icons right">close</i></h5></span>
+                <span className="card-title grey-text text-darken-4"><h5 id="profileCardRevealTitle">Bamazon<i className="material-icons right">close</i></h5></span>
                 <h6 id="carouselText">
-                  The Anime Gif Finder is a basic front-end app that uses HTML, CSS, and Javascript to perform axios requests to the GIPHY API and return anime-themed GIFs.
-                  The user can search for different tags (anime titles, characters, or really any other string) to add to the pre-selected tags and find more GIFs.
+                  As one of my first backend CLI applications, Bamazon uses the terminal to simulate a storefront.
+                  It uses Javascript logic, a MySQL database, and inquirer.js for customer interactions in the terminal.
+                  The user (customer) has the ability to place orders in the terminal, which in turn depletes the items in stock at the Bamazon warehouse and calculates a purchase total.
                 </h6>
                 <h5 className="left">
-                  <a id="carouselLink" className="white-text btn black" href="https://davidwu92.github.io/GIF-APIs/" target="_blank">
-                    Visit Gif Finder
+                  <a id="carouselLink" className="white-text btn black" href="https://github.com/davidwu92/bamazon" target="_blank">
+                    Visit the Bamazon Repo
                   </a>
                 </h5>
               </div>
