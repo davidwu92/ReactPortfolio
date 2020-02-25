@@ -9,7 +9,8 @@ import Home from './Pages/Home'
 import About from './Pages/About'
 import Resume from './Pages/Resume'
 import Portfolio from './Pages/Portfolio'
-// import Scrollspy from 'react-scrollspy'
+import StickerBoard from './Components/StickerBoard'
+
 import './app.css'
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
             <Resume />
           </section>
         </div>
+        <StickerBoard/>
       </Router>
     </>
   );

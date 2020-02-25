@@ -33,3 +33,9 @@ and (max-device-width : 1024px)  {
     height: auto;
   }
 }
+
+#stickerBar {
+  position: fixed;
+  right: 1vw;
+  bottom: 0vh;
+}
