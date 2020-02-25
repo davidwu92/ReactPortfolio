@@ -4,6 +4,7 @@ import {
   // Switch,
   // Route
 } from 'react-router-dom'
+import './app.css'
 import Navbar from './Components/Navbar'
 import Home from './Pages/Home'
 import About from './Pages/About'
@@ -11,15 +12,14 @@ import Resume from './Pages/Resume'
 import Portfolio from './Pages/Portfolio'
 import StickerBoard from './Components/StickerBoard'
 
-import './app.css'
 
 function App() {
   return (
     <>
       <Router>
         <div>
-          <section id="home">
             <Navbar/>
+          <section id="home">
             <Home/>
           </section>
           <section id="about">

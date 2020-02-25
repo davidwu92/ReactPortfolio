@@ -4,13 +4,30 @@ body{
   overflow-x: hidden;
 }
 
+#stickerBar {
+  position: fixed;
+  opacity: 0.8;
+  right: 1vw;
+  bottom: 0vh;
+  font-size: 15pt;
+}
+
+
 .container {
   height: 100vh;
 }
 
-section{
-  height: auto ;
+#navbar {
+  height: 15vh;
 }
+
+section {
+  height: 100vh;
+  background-color: lightblue;
+  padding-top: 15vh;
+}
+
+
 /* SMALL SCREEN STYLING */
 @media only screen 
 and (min-device-width : 300px) 
@@ -23,9 +40,9 @@ and (max-device-width : 600px)  {
   }
 }
 
-#pageTitle {
+/* #pageTitle {
   margin-top: 8vh;
-}
+} */
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Source Code Pro', cursive;
@@ -40,10 +57,3 @@ and (max-device-width : 1024px)  {
   }
 }
 
-#stickerBar {
-  position: fixed;
-  opacity: 0.8;
-  right: 1vw;
-  bottom: 0vh;
-  font-size: 15pt;
-}
