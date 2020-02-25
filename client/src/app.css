@@ -23,7 +23,7 @@ body{
 
 section {
   height: 100vh;
-  background-color: lightblue;
+  /* background-color: lightblue; */
   padding-top: 15vh;
 }
 
