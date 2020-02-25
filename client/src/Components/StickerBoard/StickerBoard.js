@@ -36,7 +36,7 @@ const StickerBoard = () => {
 
   //SAVE AND POST THE DRAGGED STICKER
   const saveSticker = (xPercent, yPercent) => {
-    if (xPercent > 0.05 && xPercent < 0.91 && yPercent > 0.05 && yPercent <0.91){
+    if (xPercent > 0.09 && xPercent < .91 && yPercent > 0.05){
       sessionStorage.getItem("count") ? sessionStorage.setItem("count", parseInt(sessionStorage.getItem('count')) +1) :
       sessionStorage.setItem("count", 1)
       postSticker({animal: stickerState.id, positionX: xPercent, positionY: yPercent})
@@ -74,8 +74,8 @@ const StickerBoard = () => {
 //END dragged sticker.
   const dragEnd = e =>{
     if (sessionStorage.getItem("count") <= 20) {
-      let xPercent = e.pageX/window.innerWidth
-      let yPercent = e.pageY/window.innerHeight
+      let xPercent = (e.pageX-13)/window.innerWidth
+      let yPercent = (e.pageY-13)/window.innerHeight
       saveSticker(xPercent, yPercent)
     } else {
       toast("You've reached the sticker limit (20).", toastOptions)
@@ -94,8 +94,8 @@ const StickerBoard = () => {
   // }
   const touchEnd = e =>{
     if (sessionStorage.getItem("count") <= 20) {
-      let xPercent = e.nativeEvent.changedTouches[0].pageX/window.innerWidth
-      let yPercent = e.nativeEvent.changedTouches[0].pageY/window.innerHeight
+      let xPercent = (e.nativeEvent.changedTouches[0].pageX-13)/window.innerWidth
+      let yPercent = (e.nativeEvent.changedTouches[0].pageY-13)/window.innerHeight
       saveSticker(xPercent, yPercent)
     } else {
       toast("You've reached the sticker limit (20).", toastOptions)
@@ -111,7 +111,7 @@ const StickerBoard = () => {
   const displayStickers = (stickerState.areShown && arrayState.stickers.length) ? arrayState.stickers.map(sticker => (
     <i 
     className={"small fas fa-" + sticker[0]}
-    style={{opacity: "0.1", position: "absolute", left: `${sticker[1]*window.innerWidth}px`, top: `${sticker[2]*window.innerHeight}px`}}
+    style={{ "z-index": "-2", opacity: "0.1", position: "absolute", left: `${sticker[1]*window.innerWidth}px`, top: `${sticker[2]*window.innerHeight}px`}}
     ></i>
   )) : null
 
@@ -204,12 +204,12 @@ const StickerBoard = () => {
                 <button className="btn-small btn-floating black" onClick={toggleStickers}>
                   <i className="fas fa-eye"></i>
                 </button>
-                  <span className="toggletiptext">Show/Hide Stickers</span>
+                  <span className="toggletiptext">Show/hide stickers</span>
                 </div>
             </div>
-
-          {displayStickers}
-
+          <div id="displayStickers">
+            {displayStickers}
+          </div>
       </div>
     </>
   )
