@@ -60,11 +60,11 @@ const Portfolio =()=>{
                   As a long-time pianist, coding this app became a huge passion project. I've put well over a hundred hours into this project alone, and I am responsible for front- and back-end development of the Search, Register, Gig Posting, and edit Profile features.
                 </h6>
                 <h5 className="left">
-                  <a id="carouselLink" className="white-text btn black" href="https://harmonizers.herokuapp.com/" target="_blank">
+                  <a id="carouselLink" className="white-text btn black btn-small" href="https://harmonizers.herokuapp.com/" target="_blank">
                     Visit Harmonize
                   </a>
                   <span>  </span>
-                  <a id="carouselLink" className="white-text btn black" href="https://github.com/davidwu92/Harmonize2" target="_blank">
+                  <a id="carouselLink" className="white-text btn black btn-small" href="https://github.com/davidwu92/Harmonize2" target="_blank">
                     Visit Github Repo
                   </a>
                 </h5>
@@ -86,11 +86,11 @@ const Portfolio =()=>{
                   I was the SCRUM master and repository owner, and I was responsible for much of the back end code: posting "found" items, building the database, and adding event settings.
                 </h6>
                 <h5 className="left">
-                  <a id="carouselLink" className="white-text btn black" href="https://the-laf-app.herokuapp.com/" target="_blank">
+                  <a id="carouselLink" className="white-text btn black btn-small" href="https://the-laf-app.herokuapp.com/" target="_blank">
                     Visit LAF
                   </a>
                   <span>  </span>
-                  <a id="carouselLink" className="white-text btn black" href="https://github.com/davidwu92/Project-Two" target="_blank">
+                  <a id="carouselLink" className="white-text btn black btn-small" href="https://github.com/davidwu92/Project-Two" target="_blank">
                     Visit Github Repo
                   </a>
                 </h5>
@@ -112,11 +112,11 @@ const Portfolio =()=>{
                   It was my first full-stack MERN (Mongo, react, express, node) application, written for educational and experimental purposes.
                 </h6>
                 <h5 className="left">
-                  <a id="carouselLink" className="white-text btn black" href="https://lit-lake-23677.herokuapp.com/" target="_blank">
+                  <a id="carouselLink" className="white-text btn black btn-small" href="https://lit-lake-23677.herokuapp.com/" target="_blank">
                     Visit React Scraper
                   </a>
                   <span>  </span>
-                  <a id="carouselLink" className="white-text btn black" href="https://github.com/davidwu92/ReactGoogleBooks" target="_blank">
+                  <a id="carouselLink" className="white-text btn black btn-small" href="https://github.com/davidwu92/ReactGoogleBooks" target="_blank">
                     Visit Github Repo
                   </a>
                 </h5>
@@ -139,11 +139,11 @@ const Portfolio =()=>{
                   While the application's styling shows apparent infancy in my mastery of CSS, I was reasonably proud of the JS logic behind this game! I've grown much as a developer since then.
                 </h6>
                 <h5 className="left">
-                  <a id="carouselLink" className="white-text btn black" href="https://davidwu92.github.io/Crystal-Collector-Math/" target="_blank">
+                  <a id="carouselLink" className="white-text btn black btn-small" href="https://davidwu92.github.io/Crystal-Collector-Math/" target="_blank">
                     Visit Crystal Collector
                   </a>
                   <span>  </span>
-                  <a id="carouselLink" className="white-text btn black" href="https://github.com/davidwu92/Crystal-Collector-Math" target="_blank">
+                  <a id="carouselLink" className="white-text btn black btn-small" href="https://github.com/davidwu92/Crystal-Collector-Math" target="_blank">
                     Visit Github Repo
                   </a>
                 </h5>
@@ -169,11 +169,11 @@ const Portfolio =()=>{
                   At least I was, until I learned that Moment.JS existed in our next class session.
                 </h6>
                 <h5 className="left">
-                  <a id="carouselLink" className="white-text btn black" href="https://davidwu92.github.io/TrainSimulator/" target="_blank">
+                  <a id="carouselLink" className="white-text btn black btn-small" href="https://davidwu92.github.io/TrainSimulator/" target="_blank">
                     Visit Train Simulator
                   </a>
                   <span>  </span>
-                  <a id="carouselLink" className="white-text btn black" href="https://github.com/davidwu92/TrainSimulator" target="_blank">
+                  <a id="carouselLink" className="white-text btn black btn-small" href="https://github.com/davidwu92/TrainSimulator" target="_blank">
                     Visit Github Repo
                   </a>
                 </h5>
@@ -196,11 +196,11 @@ const Portfolio =()=>{
                   In retrospect, the app is a pretty good effort for the five week mark!
                 </h6>
                 <h5 className="left">
-                  <a id="carouselLink" className="white-text btn black" href="https://davidwu92.github.io/TriviaGame/" target="_blank">
+                  <a id="carouselLink" className="white-text btn black btn-small" href="https://davidwu92.github.io/TriviaGame/" target="_blank">
                     Visit Zelda Trivia
                   </a>
                   <span>  </span>
-                  <a id="carouselLink" className="white-text btn black" href="https://github.com/davidwu92/TriviaGame" target="_blank">
+                  <a id="carouselLink" className="white-text btn black btn-small" href="https://github.com/davidwu92/TriviaGame" target="_blank">
                     Visit Github Repo
                   </a>
                 </h5>
@@ -220,11 +220,11 @@ const Portfolio =()=>{
                   The user can search for different tags (anime titles, characters, or really any other string) to add to the pre-selected tags and find more GIFs.
                 </h6>
                 <h5 className="left">
-                  <a id="carouselLink" className="white-text btn black" href="https://davidwu92.github.io/GIF-APIs/" target="_blank">
+                  <a id="carouselLink" className="white-text btn black btn-small" href="https://davidwu92.github.io/GIF-APIs/" target="_blank">
                     Visit Gif Finder
                   </a>
                   <span>  </span>
-                  <a id="carouselLink" className="white-text btn black" href="https://github.com/davidwu92/GIF-APIs" target="_blank">
+                  <a id="carouselLink" className="white-text btn black btn-small" href="https://github.com/davidwu92/GIF-APIs" target="_blank">
                     Visit Github Repo
                   </a>
                 </h5>
@@ -247,7 +247,7 @@ const Portfolio =()=>{
                   The user (customer) has the ability to place orders in the terminal, which in turn depletes the items in stock at the Bamazon warehouse and calculates a purchase total.
                 </h6>
                 <h5 className="left">
-                  <a id="carouselLink" className="white-text btn black" href="https://github.com/davidwu92/bamazon" target="_blank">
+                  <a id="carouselLink" className="white-text btn black btn-small" href="https://github.com/davidwu92/bamazon" target="_blank">
                     Visit Github Repo
                   </a>
                 </h5>
