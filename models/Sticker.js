@@ -1,8 +1,8 @@
 module.exports = (model, Schema) =>{
   const Sticker = new Schema({
     animal: String,
-    clientX: Number,
-    clientY: Number,
+    positionX: Number,
+    positionY: Number,
   })
 
   return model('Sticker', Sticker)

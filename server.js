@@ -3,7 +3,7 @@ const express = require('express')
 const { join } = require('path')
 const app = express()
 
-const mongoURI = process.env.NODE_ENV === 'production' ? process.env.MONGODB_URI : 'mongodb://localhost/harmonizedb'
+const mongoURI = process.env.NODE_ENV === 'production' ? process.env.MONGODB_URI : 'mongodb://localhost/portfoliodb'
 const mongoose = require('mongoose')
 const conn = mongoose.createConnection(mongoURI, {
   // these methods are rarely used
@@ -22,7 +22,7 @@ if (process.env.NODE_ENV === "production") {
 }
 
 //routes
-require("./routes")(app)
+require('./routes')(app)
 
 //Catches all; sends any routes NOT found in the server directly into our home.
 app.get('*', (req, res) => res.sendFile(join(__dirname, 'client', 'build', 'index.html')))
