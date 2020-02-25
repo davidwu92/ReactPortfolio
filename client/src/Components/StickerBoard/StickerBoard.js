@@ -1,10 +1,12 @@
 import React, {useState, useEffect} from "react"
 import StickerAPI from '../../utils/StickerAPI'
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const {getStickers, postSticker} = StickerAPI
 
 const StickerBoard = () => {
-  
+
 //GRABBED sticker id
   const [stickerState, setStickerState] = useState({
     areShown: true,
@@ -40,23 +42,39 @@ const StickerBoard = () => {
   const dragOver = e => {
     e.stopPropagation()
   }
+
+  toast.configure();
+  const toastOptions = {
+    autoClose: 7000,
+    hideProgressBar: true,
+    type: "error"
+  }
+
 //END dragged sticker.
   const dragEnd = e =>{
-    postSticker({animal: stickerState.id, positionX: e.pageX, positionY: e.pageY})
-    .then(()=>{
-      getStickers()
-      .then(({data}) => {
-        let stickerArray = []
-        data.forEach(sticker => {
-          let arr = []
-          arr.push(sticker.animal, sticker.positionX, sticker.positionY)
-          stickerArray.push(arr)
+
+    sessionStorage.getItem("count") ? sessionStorage.setItem("count", parseInt(sessionStorage.getItem('count')) +1) :
+    sessionStorage.setItem("count", 1)
+
+    if (sessionStorage.getItem("count") <= 20) {
+      postSticker({animal: stickerState.id, positionX: e.pageX, positionY: e.pageY})
+      .then(()=>{
+        getStickers()
+        .then(({data}) => {
+          let stickerArray = []
+          data.forEach(sticker => {
+            let arr = []
+            arr.push(sticker.animal, sticker.positionX, sticker.positionY)
+            stickerArray.push(arr)
+          })
+          setArrayState({stickers: stickerArray})
         })
-        setArrayState({stickers: stickerArray})
+        .catch(e=>console.error(e))
       })
       .catch(e=>console.error(e))
-    })
-    .catch(e=>console.error(e))
+    } else {
+      toast("You've reached the sticker limit (20). Please leave some room for others to decorate!", toastOptions)
+    }
     //LOCAL ONLY
     // let dropInfo = arrayState.stickers
     // dropInfo.push([stickerState.id, e.pageX, e.pageY])
