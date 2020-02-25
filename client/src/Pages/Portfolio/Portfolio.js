@@ -32,7 +32,6 @@ const Portfolio =()=>{
   }
   return(
     <>
-      <Navbar/>
       <div className="container" id="pageContainer">
         <div id="pageTitle" className = "row center">
           <h1>Portfolio</h1>

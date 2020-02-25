@@ -9,7 +9,7 @@ import Navbar from '../../Components/Navbar'
 const About = () => {
   return(
     <>
-      <Navbar/>
+      {/* <Navbar/> */}
       <div className="container" id="aboutContainer">
         <div id="pageTitle" className = "row center">
           <h2>About me</h2>

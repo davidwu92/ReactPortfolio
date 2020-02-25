@@ -6,7 +6,7 @@ import Scrollspy from 'react-scrollspy'
 const Navbar = () => {
   return (
     <>
-      <div className="navbar-fixed">
+      <div id="navbar" className="navbar-fixed">
         <nav id="bottomNav" className="nav-extended black">
           <div className="nav-wrapper">
             <div className="brand-logo" id="navTitle"><a href="#home">David Wu</a></div>

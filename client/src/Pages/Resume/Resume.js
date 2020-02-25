@@ -4,7 +4,7 @@ import Navbar from '../../Components/Navbar'
 const Resume = () => {
   return(
     <>
-      <Navbar/>
+      {/* <Navbar/> */}
       <div className="container" id="resumeContainer">
         <div id="pageTitle" className = "row center">
           <h1>Resume</h1>
