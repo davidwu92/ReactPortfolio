@@ -31,8 +31,8 @@ function App() {
           <section id="resume">
             <Resume />
           </section>
-        </div>
         <StickerBoard/>
+        </div>
       </Router>
     </>
   );
