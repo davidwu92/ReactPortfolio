@@ -10,6 +10,7 @@ body{
   right: 1vw;
   bottom: 0vh;
   font-size: 15pt;
+  touch-action: none;
 }
 
 
