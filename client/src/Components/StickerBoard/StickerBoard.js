@@ -78,7 +78,7 @@ const StickerBoard = () => {
       let yPercent = e.pageY/window.innerHeight
       saveSticker(xPercent, yPercent)
     } else {
-      toast("You've reached the sticker limit (20). I hope you enjoyed", toastOptions)
+      toast("You've reached the sticker limit (20).", toastOptions)
     }
   }
 
@@ -98,13 +98,15 @@ const StickerBoard = () => {
       let yPercent = e.nativeEvent.changedTouches[0].pageY/window.innerHeight
       saveSticker(xPercent, yPercent)
     } else {
-      toast("You've reached the sticker limit (20). I hope you enjoyed", toastOptions)
+      toast("You've reached the sticker limit (20).", toastOptions)
     }
   }
 
   const toggleStickers = () => {
     setStickerState({...stickerState, areShown: !stickerState.areShown})
   }
+
+  const tooltip = sessionStorage.getItem("count") ? null : <span className="tooltiptext">Everybody else is doing it...</span>
 
   const displayStickers = (stickerState.areShown && arrayState.stickers.length) ? arrayState.stickers.map(sticker => (
     <i 
@@ -117,8 +119,8 @@ const StickerBoard = () => {
     <>
       <div id="stickerContainer">
         {/* <Stickers/> */}
-            <div className="row" id="stickerBar"> 
-
+            <div className="row tooltip" id="stickerBar" > 
+                {tooltip}
                 <div
                   id="cat"
                   draggable="true"
@@ -198,9 +200,12 @@ const StickerBoard = () => {
                       <i id="barIcon" className="fas fa-dragon"></i>
                     </button>
                 </div>
+                <div className="toggletip">
                 <button className="btn-small btn-floating black" onClick={toggleStickers}>
                   <i className="fas fa-eye"></i>
                 </button>
+                  <span className="toggletiptext">Show/Hide Stickers</span>
+                </div>
             </div>
 
           {displayStickers}

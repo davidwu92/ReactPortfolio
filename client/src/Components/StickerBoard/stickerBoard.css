@@ -2,3 +2,48 @@
   color: black;
   /* touch-action: none; now in app.css*/
 }
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  font-size: x-small;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  right: 0.4vw;
+  top: -5vh;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+/* Tooltip text */
+.toggletip .toggletiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  font-size: x-small;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the toggletip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  right: 0vw;
+  top: 25vh;
+}
+
+/* Show the toggletip text when you mouse over the toggletip container */
+.toggletip:hover .toggletiptext {
+  visibility: visible;
+}
