@@ -52,12 +52,12 @@ const StickerBoard = () => {
 
 //END dragged sticker.
   const dragEnd = e =>{
-
+    // console.log(e.view)
     sessionStorage.getItem("count") ? sessionStorage.setItem("count", parseInt(sessionStorage.getItem('count')) +1) :
     sessionStorage.setItem("count", 1)
 
     if (sessionStorage.getItem("count") <= 20) {
-      postSticker({animal: stickerState.id, positionX: e.pageX, positionY: e.pageY})
+      postSticker({animal: stickerState.id, positionX: e.pageX/window.innerWidth, positionY: e.pageY/window.innerHeight})
       .then(()=>{
         getStickers()
         .then(({data}) => {
@@ -88,7 +88,7 @@ const StickerBoard = () => {
   const displayStickers = (stickerState.areShown && arrayState.stickers.length) ? arrayState.stickers.map(sticker => (
     <i 
     className={"small fas fa-" + sticker[0]}
-    style={{opacity: "0.1", position: "absolute", left: `${sticker[1]}px`, top: `${sticker[2]}px`}}
+    style={{opacity: "0.1", position: "absolute", left: `${sticker[1]*window.innerWidth}px`, top: `${sticker[2]*window.innerHeight}px`}}
     ></i>
   )) : null
 
