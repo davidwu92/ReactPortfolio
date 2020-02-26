@@ -36,7 +36,7 @@ const StickerBoard = () => {
 
   //SAVE AND POST THE DRAGGED STICKER
   const saveSticker = (xPercent, yPercent) => {
-    if (xPercent > 0.09 && xPercent < .91 && yPercent > 0.05){
+    if (xPercent > 0.04 && xPercent < .96 && yPercent > 0.05){
       sessionStorage.getItem("count") ? sessionStorage.setItem("count", parseInt(sessionStorage.getItem('count')) +1) :
       sessionStorage.setItem("count", 1)
       postSticker({animal: stickerState.id, positionX: xPercent, positionY: yPercent})
@@ -117,7 +117,13 @@ const StickerBoard = () => {
   const displayStickers = (stickerState.areShown && arrayState.stickers.length) ? arrayState.stickers.map(sticker => (
     <i
     className={"small fas fa-" + sticker[0]}
-    style={{ "z-index": "-2", opacity: "0.1", position: "absolute", left: `${sticker[1]*window.innerWidth}px`, top: `${sticker[2]*window.innerHeight}px`}}
+    style={{"z-index": "-2",
+            opacity: "0.1",
+            padding: "0",
+            margin: "-5px",
+            position: "absolute",
+            left: `${window.innerWidth < 700 ? (sticker[1]*window.innerWidth-.5)*.97+.5 : sticker[1]*window.innerWidth}px`,
+            top: `${sticker[2]*window.innerHeight}px`}}
     ></i>
   )) : null
 
