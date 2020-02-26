@@ -87,7 +87,7 @@ const StickerBoard = () => {
       if (sessionStorage.getItem("count") ==22){
         toast(`Do you play any musical instruments? Perhaps consider creating an account on Harmonize to try some of its many features.`, 
         {autoClose: 10000, hideProgressBar: true, type: "warning"})
-        toast(`Because you've stuck enough stickers.`, {autoClose: 8000, delay:2000, hideProgressBar: true, type:"warning"})
+        toast(`Because you've stuck enough stickers.`, {autoClose: 7000, delay:3000, hideProgressBar: true, type:"warning"})
       }
       if (sessionStorage.getItem("count") ==29){
         toast(`Please desist.`, 
@@ -120,7 +120,7 @@ const StickerBoard = () => {
   const touchEnd = e =>{
     if (sessionStorage.getItem("count") <= 34) {
       if (sessionStorage.getItem("count") == 8){
-        toast(`How fun. There's plenty of space for stickers around my "About, "Portfolio", and "Resume"" sect too!`,
+        toast(`How fun. There's plenty of space for stickers around my "About, "Portfolio", and "Resume" sections!`,
         {autoClose: 6000, hideProgressBar: true, type: "success"})
       }
       if (sessionStorage.getItem("count") ==12){
@@ -134,7 +134,7 @@ const StickerBoard = () => {
       if (sessionStorage.getItem("count") ==22){
         toast(`Do you play any musical instruments? Perhaps consider creating an account on Harmonize to try some of its many features.`, 
         {autoClose: 10000, hideProgressBar: true, type: "warning"})
-        toast(`Because you've stuck enough stickers.`, {autoClose: 8000, delay:2000, hideProgressBar: true, type:"warning"})
+        toast(`Because you've stuck enough stickers.`, {autoClose: 7000, delay:3000, hideProgressBar: true, type:"warning"})
       }
       if (sessionStorage.getItem("count") ==29){
         toast(`Please desist.`, 

@@ -12,6 +12,7 @@ const Resume = () => {
           <h1>Resume</h1>
           <a 
             // href={process.env.PUBLIC_URL + '/Resume2020.pdf'}
+            id="resumeLink"
             href={resumepdf}
             target="_blank"
             className="black btn-small right">Download</a>

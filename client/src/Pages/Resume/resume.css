@@ -8,6 +8,9 @@
   border-style: ridge;
   /* z-index: -3; */
 }
+#resumeLink {
+  z-index: 3;
+}
 
 /* SMALL SCREEN STYLING */
 @media only screen 
