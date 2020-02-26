@@ -34,7 +34,7 @@ const Portfolio =()=>{
       <div className="container" id="pageContainer">
         <div id="pageTitle" className = "row center">
           <h1>Portfolio</h1>
-          <h6>Click on the screenshot for more info. Drag left or right to peruse my work.</h6>
+          <h6>Drag left or right to peruse some of my work. Click a screenshot for links and info.</h6>
         </div>
         {/* CAROUSEL */}
         <div class="carousel carousel-slider" onChange={onSlide}>

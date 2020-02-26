@@ -1,7 +1,33 @@
+#resumeDiv{
+ text-align: center; 
+}
 #resumeImg{
   position: relative;
-  width: 90%;
-  left: 4%;
+  width: 75%;
   border-width: 2px;
   border-style: ridge;
+  /* z-index: -3; */
+}
+
+/* SMALL SCREEN STYLING */
+@media only screen 
+and (min-device-width : 300px) 
+and (max-device-width : 600px)  {
+  #resumeImg {
+    position: relative;
+    width: 100%;
+    border-width: 2px;
+    border-style: ridge;
+  }
+}
+/* MEDIUM SCREEN */
+@media only screen 
+and (min-device-width : 601px) 
+and (max-device-width : 995px)  {
+  #resumeImg {
+    position: relative;
+    width: 90%;
+    border-width: 2px;
+    border-style: ridge;
+  }
 }

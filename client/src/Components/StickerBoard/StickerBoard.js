@@ -74,6 +74,9 @@ const StickerBoard = () => {
 //END dragged sticker.
   const dragEnd = e =>{
     if (sessionStorage.getItem("count") <= 20) {
+      if (sessionStorage.getItem("count") == 15){
+        toast("How fun.", {autoClose: 2000, hideProgressBar: true, type: "success"})
+      }
       let xPercent = (e.pageX-13)/window.innerWidth
       let yPercent = (e.pageY-13)/window.innerHeight
       saveSticker(xPercent, yPercent)
@@ -94,6 +97,9 @@ const StickerBoard = () => {
   // }
   const touchEnd = e =>{
     if (sessionStorage.getItem("count") <= 20) {
+      if (sessionStorage.getItem("count") == 15){
+        toast("How fun.", {autoClose: 4000, hideProgressBar: true, type: "success"})
+      }
       let xPercent = (e.nativeEvent.changedTouches[0].pageX-13)/window.innerWidth
       let yPercent = (e.nativeEvent.changedTouches[0].pageY-13)/window.innerHeight
       saveSticker(xPercent, yPercent)
@@ -106,10 +112,10 @@ const StickerBoard = () => {
     setStickerState({...stickerState, areShown: !stickerState.areShown})
   }
 
-  const tooltip = sessionStorage.getItem("count") ? null : <span className="tooltiptext">Everybody else is doing it...</span>
+  const tooltip = sessionStorage.getItem("count") ? null : <span className="tooltiptext">Drag/drop on my page. Everybody else is doing it...</span>
 
   const displayStickers = (stickerState.areShown && arrayState.stickers.length) ? arrayState.stickers.map(sticker => (
-    <i 
+    <i
     className={"small fas fa-" + sticker[0]}
     style={{ "z-index": "-2", opacity: "0.1", position: "absolute", left: `${sticker[1]*window.innerWidth}px`, top: `${sticker[2]*window.innerHeight}px`}}
     ></i>

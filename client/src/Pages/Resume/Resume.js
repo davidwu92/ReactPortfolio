@@ -16,7 +16,7 @@ const Resume = () => {
             target="_blank"
             className="black btn-small right">Download</a>
         </div>
-        <div className="row">
+        <div className="row" id="resumeDiv">
           <img id="resumeImg" src={resume} alt="David Wu's Resume"></img>
         </div>
       </div>
