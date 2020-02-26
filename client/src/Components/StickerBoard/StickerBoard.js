@@ -87,7 +87,7 @@ const StickerBoard = () => {
       if (sessionStorage.getItem("count") ==22){
         toast(`Do you play any musical instruments? Perhaps consider creating an account on Harmonize to try some of its many features.`, 
         {autoClose: 10000, hideProgressBar: true, type: "warning"})
-        toast(`Because you've stuck enough stickers.`, {autoClose: 8000, delay:2000, hideProgressBar: true, type:warning})
+        toast(`Because you've stuck enough stickers.`, {autoClose: 8000, delay:2000, hideProgressBar: true, type:"warning"})
       }
       if (sessionStorage.getItem("count") ==29){
         toast(`Please desist.`, 
@@ -134,7 +134,7 @@ const StickerBoard = () => {
       if (sessionStorage.getItem("count") ==22){
         toast(`Do you play any musical instruments? Perhaps consider creating an account on Harmonize to try some of its many features.`, 
         {autoClose: 10000, hideProgressBar: true, type: "warning"})
-        toast(`Because you've stuck enough stickers.`, {autoClose: 8000, delay:2000, hideProgressBar: true, type:warning})
+        toast(`Because you've stuck enough stickers.`, {autoClose: 8000, delay:2000, hideProgressBar: true, type:"warning"})
       }
       if (sessionStorage.getItem("count") ==29){
         toast(`Please desist.`, 
