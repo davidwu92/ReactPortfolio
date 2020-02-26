@@ -71,7 +71,7 @@ const StickerBoard = () => {
   toast.configure();
 //END dragged sticker.
   const dragEnd = e =>{
-    if (sessionStorage.getItem("count") <= 30) {
+    if (sessionStorage.getItem("count") <= 34) {
       if (sessionStorage.getItem("count") == 8){
         toast(`How fun. There's plenty of space for stickers around my "About", "Portfolio", and "Resume" sections!`, 
         {autoClose: 6000, hideProgressBar: true, type: "success"})
@@ -86,11 +86,11 @@ const StickerBoard = () => {
       }
       if (sessionStorage.getItem("count") ==22){
         toast(`Do you play any musical instruments? Perhaps consider creating an account on Harmonize to try some of its many features. Because you've stuck enough stickers.`, 
-        {autoClose: 7000, hideProgressBar: true, type: "warning"})
+        {autoClose: 10000, hideProgressBar: true, type: "warning"})
       }
-      if (sessionStorage.getItem("count") ==27){
+      if (sessionStorage.getItem("count") ==29){
         toast(`Please desist.`, 
-        {autoClose: 7000, hideProgressBar: true, type: "error"})
+        {autoClose: 4000, hideProgressBar: true, type: "error"})
       }
       let xPercent = (e.pageX-13)/window.innerWidth
       let yPercent = (e.pageY-13)/window.innerHeight
@@ -117,7 +117,7 @@ const StickerBoard = () => {
   //   e.stopPropagation()
   // }
   const touchEnd = e =>{
-    if (sessionStorage.getItem("count") <= 30) {
+    if (sessionStorage.getItem("count") <= 34) {
       if (sessionStorage.getItem("count") == 8){
         toast(`How fun. There's plenty of space for stickers around my "About, "Portfolio", and "Resume"" sect too!`,
         {autoClose: 6000, hideProgressBar: true, type: "success"})
@@ -132,11 +132,11 @@ const StickerBoard = () => {
       }
       if (sessionStorage.getItem("count") ==22){
         toast(`Do you play any musical instruments? Perhaps consider creating an account on Harmonize to try some of its many features. Because you've stuck enough stickers.`, 
-        {autoClose: 7000, hideProgressBar: true, type: "warning"})
+        {autoClose: 10000, hideProgressBar: true, type: "warning"})
       }
-      if (sessionStorage.getItem("count") ==27){
+      if (sessionStorage.getItem("count") ==29){
         toast(`Please desist.`, 
-        {autoClose: 7000, hideProgressBar: true, type: "error"})
+        {autoClose: 4000, hideProgressBar: true, type: "error"})
       }
       let xPercent = (e.nativeEvent.changedTouches[0].pageX-13)/window.innerWidth
       let yPercent = (e.nativeEvent.changedTouches[0].pageY-13)/window.innerHeight
