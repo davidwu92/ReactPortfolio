@@ -4,12 +4,10 @@ import gears from './gears.png'
 import responsive from './responsive.png'
 import adaptable from './adaptable.jpg'
 import './about.css'
-import Navbar from '../../Components/Navbar'
 
 const About = () => {
   return(
     <>
-      {/* <Navbar/> */}
       <div className="container" id="aboutContainer">
         <div id="pageTitle" className = "row center">
           <h2>About me</h2>

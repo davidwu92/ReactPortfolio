@@ -1,5 +1,4 @@
 import React, {useEffect} from 'react'
-import Navbar from '../../Components/Navbar'
 import M from "materialize-css";
 import './portfolio.css'
 import harmonize from './Harmonize.png'

@@ -1,6 +1,6 @@
-import React, {Component} from 'react'
-import Navbar from '../../Components/Navbar'
+import React from 'react'
 import resume from './Resume.png'
+import resumepdf from './Resume2020.pdf'
 import './resume.css'
 
 const Resume = () => {
@@ -10,7 +10,11 @@ const Resume = () => {
       <div className="container" id="resumeContainer">
         <div id="pageTitle" className = "row center">
           <h1>Resume</h1>
-          <a className="black btn-small right">Download</a>
+          <a 
+            // href={process.env.PUBLIC_URL + '/Resume2020.pdf'}
+            href={resumepdf}
+            target="_blank"
+            className="black btn-small right">Download</a>
         </div>
         <div className="row">
           <img id="resumeImg" src={resume} alt="David Wu's Resume"></img>
