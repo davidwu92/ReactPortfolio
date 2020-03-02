@@ -27,7 +27,7 @@ const About = () => {
                 </div>
                 <div className="card-reveal">
                   <span className="card-title grey-text text-darken-4" id="aboutCardRevealTitle">Web App Innovator<i className="material-icons right">close</i></span>
-                  <p>In addition to being the focus of my career path, Web Development is one of many creative outlets for myself. The projects in my portfolio display some of my original ideas brought to life through web apps.</p>
+                  <p>In addition to being the focus of my career path, web development is one of many creative outlets for myself. The projects in my portfolio display some of my original ideas brought to life through web apps.</p>
                   <p>I'll let you be the judge of just how interesting those ideas are; check out LAF and Harmonize, two of my brain-children from my days at UCI's coding bootcamp, in my portfolio section.</p>
                 </div>
               </div>
@@ -59,8 +59,8 @@ const About = () => {
                 </div>
                 <div className="card-reveal">
                   <span className="card-title grey-text text-darken-4" id="aboutCardRevealTitle">Responsive Web Design<i className="material-icons right">close</i></span>
-                  <p>I am cool, confident, and comfortable writing functioning code in the back end. The same is true for working with UI/UX elements in the front end.</p>
-                  <p>My full-stack web apps are responsive, designed to be viewed from any device.</p>
+                  <p>I am cool, confident, and comfortable writing functioning JS code in the back end. The same is true for working with UI/UX elements in the front end.</p>
+                  <p>My full-stack web apps (including this site!) are mobile-responsive, designed to be viewed from any device.</p>
                 </div>
               </div>
           </div>
@@ -78,7 +78,7 @@ const About = () => {
                   <p>
                     {/* We as developers must learn to adapt to intermittent shifts in tech trends and industry standards.  */}
                     I'm no stranger to navigating steep learning curves, nor am I to diving into unfamiliar technologies.</p>
-                  <p>All the skills needed to craft my portfolio projects (and this site) were developed swiftly over the course of six months. I was always been a bit of a masochist when it came to wrestling with higher level math and physics class content—new coding concepts have proven to be no different.</p>
+                  <p>All the skills needed to craft my portfolio projects were developed swiftly over the course of six months. I was always been a bit of a masochist when it came to wrestling with higher level math and physics class content—new coding concepts have proven to be no different.</p>
                 </div>
               </div>
           </div>

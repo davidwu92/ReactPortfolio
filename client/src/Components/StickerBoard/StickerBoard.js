@@ -71,28 +71,8 @@ const StickerBoard = () => {
   toast.configure();
 //END dragged sticker.
   const dragEnd = e =>{
-    if (sessionStorage.getItem("count") <= 34) {
-      if (sessionStorage.getItem("count") == 8){
-        toast(`How fun. There's plenty of space for stickers around my "About", "Portfolio", and "Resume" sections!`, 
-        {autoClose: 6000, hideProgressBar: true, type: "success"})
-      }
-      if (sessionStorage.getItem("count") ==12){
-        toast(`The stickers must be very exciting! On that note, have you examined the projects in my portfolio yet?`, 
-        {autoClose: 7000, hideProgressBar: true, type: "info"})
-      }
-      if (sessionStorage.getItem("count") ==17){
-        toast(`The mobile-responsive stickerboard features some nifty logic, creativity, and math. But this site is not titled "The Sticker App".`, 
-        {autoClose: 7000, hideProgressBar: true, type: "warning"})
-      }
-      if (sessionStorage.getItem("count") ==22){
-        toast(`Do you play any musical instruments? Perhaps consider creating an account on Harmonize to try some of its many features.`, 
-        {autoClose: 10000, hideProgressBar: true, type: "warning"})
-        toast(`Because you've stuck enough stickers.`, {autoClose: 7000, delay:3000, hideProgressBar: true, type:"warning"})
-      }
-      if (sessionStorage.getItem("count") ==29){
-        toast(`Please desist.`, 
-        {autoClose: 4000, hideProgressBar: true, type: "error"})
-      }
+    if (sessionStorage.getItem("count") <= 30) {
+      stickerMessages()
       let xPercent = (e.pageX-13)/window.innerWidth
       let yPercent = (e.pageY-13)/window.innerHeight
       saveSticker(xPercent, yPercent)
@@ -100,9 +80,10 @@ const StickerBoard = () => {
       // CHECK if limit reached alert has happened already.
       if(!sessionStorage.getItem("limitReached")){
         sessionStorage.setItem("limitReached", "Annoyingly enough, yes.")
-        toast(`You've reached the sticker limit. I probably need to reset my Mongo database before this app is completely overrun by stickers.`, {autoClose: 9000,hideProgressBar: true,type: "error"
-        })
-        toast(` I hope you're happy with yourself.`, {autoClose:5000, delay:4000, hideProgressBar: true, type: "error"})
+        toast(`You've reached the sticker limit. I probably need to reset my Mongo database before this app is completely overrun by stickers.`,
+          {autoClose: 9000,hideProgressBar: true,type: "error"})
+        toast(`I hope you've enjoyed this feature!`,
+          {autoClose:5000, delay:4000, hideProgressBar: true, type: "error"})
       }
     }
   }
@@ -118,38 +99,43 @@ const StickerBoard = () => {
   //   e.stopPropagation()
   // }
   const touchEnd = e =>{
-    if (sessionStorage.getItem("count") <= 34) {
-      if (sessionStorage.getItem("count") == 8){
-        toast(`How fun. There's plenty of space for stickers around my "About, "Portfolio", and "Resume" sections!`,
-        {autoClose: 6000, hideProgressBar: true, type: "success"})
-      }
-      if (sessionStorage.getItem("count") ==12){
-        toast(`The stickers must be very exciting! On that note, have you examined the projects in my portfolio yet?`, 
-        {autoClose: 7000, hideProgressBar: true, type: "info"})
-      }
-      if (sessionStorage.getItem("count") ==17){
-        toast(`The mobile-responsive stickerboard features some nifty logic, creativity, and math. But this site is not titled "The Sticker App".`, 
-        {autoClose: 7000, hideProgressBar: true, type: "warning"})
-      }
-      if (sessionStorage.getItem("count") ==22){
-        toast(`Do you play any musical instruments? Perhaps consider creating an account on Harmonize to try some of its many features.`, 
-        {autoClose: 10000, hideProgressBar: true, type: "warning"})
-        toast(`Because you've stuck enough stickers.`, {autoClose: 7000, delay:3000, hideProgressBar: true, type:"warning"})
-      }
-      if (sessionStorage.getItem("count") ==29){
-        toast(`Please desist.`, 
-        {autoClose: 4000, hideProgressBar: true, type: "error"})
-      }
+    if (sessionStorage.getItem("count") <= 30) {
+      stickerMessages()
       let xPercent = (e.nativeEvent.changedTouches[0].pageX-13)/window.innerWidth
       let yPercent = (e.nativeEvent.changedTouches[0].pageY-13)/window.innerHeight
       saveSticker(xPercent, yPercent)
     } else {
       if(!sessionStorage.getItem("limitReached")){
         sessionStorage.setItem("limitReached", "Annoyingly enough, yes.")
-        toast(`You've reached the sticker limit. I probably need to reset my Mongo database before this app is completely overrun by stickers.`, {autoClose: 9000,hideProgressBar: true,type: "error"
-        })
-        toast(` I hope you're happy with yourself.`, {autoClose:5000, delay:4000, hideProgressBar: true, type: "error"})
+        toast(`You've reached the sticker limit. I probably need to reset my Mongo database before this app is completely overrun by stickers.`,
+          {autoClose: 9000,hideProgressBar: true,type: "error"})
+        toast(`I hope you've enjoyed this feature!`,
+          {autoClose:5000, delay:4000, hideProgressBar: true, type: "error"})
       }
+    }
+  }
+
+  const stickerMessages = () => {
+    if (sessionStorage.getItem("count") == 5){
+      toast(`How fun. There's plenty of space for stickers around my "About, "Portfolio", and "Resume" sections!`,
+      {autoClose: 6000, hideProgressBar: true, type: "success"})
+    }
+    if (sessionStorage.getItem("count") ==10){
+      toast(`The stickers must be very exciting! On that note, have you examined the projects in my portfolio yet?`, 
+      {autoClose: 7000, hideProgressBar: true, type: "info"})
+    }
+    if (sessionStorage.getItem("count") ==15){
+      toast(`I wrote a fully functioning "React Stickers App" one morning solely to make this feature possible; check out the code by visiting my Github!`, 
+      {autoClose: 7000, hideProgressBar: true, type: "warning"})
+    }
+    if (sessionStorage.getItem("count") ==20){
+      toast(`Do you play any musical instruments? Perhaps create an account on Harmonize to try some of its many features.`, 
+      {autoClose: 10000, hideProgressBar: true, type: "warning"})
+      toast(`Because you've stuck enough stickers.`, {autoClose: 7000, delay:3000, hideProgressBar: true, type:"warning"})
+    }
+    if (sessionStorage.getItem("count") ==25){
+      toast(`Please desist.`, 
+      {autoClose: 4000, hideProgressBar: true, type: "error"})
     }
   }
 
