@@ -9,6 +9,7 @@ import trainSimulator from './TrainSimulator.png'
 import triviaGame from './TriviaGame.png'
 import reactScraper from './ReactScraper.png'
 import bamazon from './Bamazon.png'
+import payTrack from './PayTrack.png'
 
 const Portfolio =()=>{
 
@@ -100,22 +101,23 @@ const Portfolio =()=>{
           <div class="carousel-item" id="item3" href="#three!">
             <div className="card" id="card">
               <div id="pCardImage" className="card-image">
-                  <img  alt="Harmonize Screenshot" className="activator" src={reactScraper}/>
+                  <img  alt="PayTrack Screenshot" className="activator" src={payTrack}/>
               </div>
               <div className="card-reveal" id="portfolioCardReveal">
-                <span className="card-title grey-text text-darken-4"><h5 id="profileCardRevealTitle">React Books Scraper<i className="material-icons right">close</i></h5></span>
+                <span className="card-title grey-text text-darken-4"><h5 id="profileCardRevealTitle">PayTrack<i className="material-icons right">close</i></h5></span>
                 <h6 id="carouselText">
-                  React Books is a quick application I wrote that takes the user's search query, then scrapes and saves information from Google Books. 
+                  PayTrack is my newest project, started and finished in about two weeks' worth of mostly-solo coding in March of 2020.
                 </h6>
                 <h6 id="carouselText">
-                  It was my first full-stack MERN (Mongo, react, express, node) application, written for educational and experimental purposes.
+                  This full-stack MERN application allows the user to create recurring or one-time financial calendar events; it uses react-materialize, re-charts, and FullCalendar for an extremely user-friendly UI/UX.
+                  Users have access to graphs and statements that summarize financial activity (by month, year, and/or category!) they wish to track.
                 </h6>
                 <h5 className="left">
-                  <a id="carouselLink" className="white-text btn black btn-small" href="https://lit-lake-23677.herokuapp.com/" target="_blank">
-                    Visit React Scraper
+                  <a id="carouselLink" className="white-text btn black btn-small" href="https://paytrackapp.herokuapp.com/" target="_blank">
+                    Visit PayTrack
                   </a>
                   <span>  </span>
-                  <a id="carouselLink" className="white-text btn black btn-small" href="https://github.com/davidwu92/ReactGoogleBooks" target="_blank">
+                  <a id="carouselLink" className="white-text btn black btn-small" href="https://github.com/davidwu92/PaymentTracker" target="_blank">
                     Visit Github Repo
                   </a>
                 </h5>
