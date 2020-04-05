@@ -5,7 +5,8 @@ import harmonize from './Harmonize.png'
 import animeGif from './AnimeGifFinder.png'
 import crystalCollector from './CrystalCollector.png'
 import laf from './LAF.png'
-import trainSimulator from './TrainSimulator.png'
+// import trainSimulator from './TrainSimulator.png'
+import speedScrabble from './SpeedScrabble.png'
 import triviaGame from './TriviaGame.png'
 import reactScraper from './ReactScraper.png'
 import bamazon from './Bamazon.png'
@@ -106,7 +107,7 @@ const Portfolio =()=>{
               <div className="card-reveal" id="portfolioCardReveal">
                 <span className="card-title grey-text text-darken-4"><h5 id="profileCardRevealTitle">PayTrack<i className="material-icons right">close</i></h5></span>
                 <h6 id="carouselText">
-                  PayTrack is my newest project, started and finished in about two weeks' worth of mostly-solo coding in March of 2020.
+                  PayTrack is the first project I tackled post-graduation. It was started and finished in about two weeks' worth of mostly-solo coding in March of 2020.
                 </h6>
                 <h6 id="carouselText">
                   This full-stack MERN application allows the user to create recurring or one-time financial calendar events; it uses react-materialize, re-charts, and FullCalendar for an extremely user-friendly UI/UX.
@@ -155,26 +156,26 @@ const Portfolio =()=>{
           <div class="carousel-item" id="item5" href="#five!">
             <div className="card" id="card">
               <div id="pCardImage" className="card-image">
-                  <img  alt="Harmonize Screenshot" className="activator" src={trainSimulator}/>
+                  <img  alt="Harmonize Screenshot" className="activator" src={speedScrabble}/>
               </div>
               <div className="card-reveal" id="portfolioCardReveal">
-                <span className="card-title grey-text text-darken-4"><h5 id="profileCardRevealTitle">Train Simulator<i className="material-icons right">close</i></h5></span>
+                <span className="card-title grey-text text-darken-4"><h5 id="profileCardRevealTitle">Speed Scrabble<i className="material-icons right">close</i></h5></span>
                 <h6 id="carouselText">
-                  The Train Simulator is a front-end web application that simulates departures and arrivals for a hypothetical train station using Axios requests and Firebase collections.
+                  Speed Scrabble was the second project I completed post-graduation. I used to play this game as a child for hours on end against my older sister, and had the idea to turn it into a web application!
                 </h6>
                 <h6 id="carouselText">
-                  The assignment was given to us only a few weeks into our class, and I found myself spending many hours writing tediously algebra-heavy code based solely on UNIX timestamps to calculate time-based events: first departures, intervals between departures and arrivals, etc.
-                  I was so very proud of the JS code I wrote that day, as it was fully functional and performed accurate time calculations for my trains.
+                  The entire project was coded by myself and my friend Paul (a fellow Harmonize developer). I built out many of the game mechanics: the user's hand, the board, the ability to drag-and-drop tiles (or tap-place them on mobile/tablet), swapping tiles out with tiles still in the "bag", reading the words off the board, etc.
                 </h6>
                 <h6 id="carouselText">
-                  At least I was, until I learned that Moment.JS existed in our next class session.
+                  It was quite a fun challenge working with this self-built Scrabble Board grid! 
+                  I created the game board using an array of 10 arrays (resulting in a 10x10 matrix), and had the pleasure of figuring out the logic for 1. reading off all the words placed on the board and 2. coding an algorithm that checks if tile placement on the board was legal.
                 </h6>
                 <h5 className="left">
-                  <a id="carouselLink" className="white-text btn black btn-small" href="https://davidwu92.github.io/TrainSimulator/" target="_blank">
-                    Visit Train Simulator
+                  <a id="carouselLink" className="white-text btn black btn-small" href="http://speedscrabble.herokuapp.com/" target="_blank">
+                    Visit/Play Speed Scrabble
                   </a>
                   <span>  </span>
-                  <a id="carouselLink" className="white-text btn black btn-small" href="https://github.com/davidwu92/TrainSimulator" target="_blank">
+                  <a id="carouselLink" className="white-text btn black btn-small" href="https://github.com/davidwu92/SpeedScrabble" target="_blank">
                     Visit Github Repo
                   </a>
                 </h5>
