@@ -3,7 +3,7 @@ import M from "materialize-css";
 import './portfolio.css'
 import harmonize from './Harmonize.png'
 import animeGif from './AnimeGifFinder.png'
-import crystalCollector from './CrystalCollector.png'
+import irvineKumon from './IrvineKumon.png'
 import laf from './LAF.png'
 // import trainSimulator from './TrainSimulator.png'
 import speedScrabble from './SpeedScrabble.png'
@@ -129,23 +129,23 @@ const Portfolio =()=>{
           <div class="carousel-item" id="item4" href="#four!">
             <div className="card" id="card">
               <div id="pCardImage" className="card-image">
-                  <img  alt="Harmonize Screenshot" className="activator" src={crystalCollector}/>
+                  <img  alt="Harmonize Screenshot" className="activator" src={irvineKumon}/>
               </div>
               <div className="card-reveal" id="portfolioCardReveal">
-                <span className="card-title grey-text text-darken-4"><h5 id="profileCardRevealTitle">Crystal Collector<i className="material-icons right">close</i></h5></span>
+                <span className="card-title grey-text text-darken-4"><h5 id="profileCardRevealTitle">Irvine Kumon Website<i className="material-icons right">close</i></h5></span>
                 <h6 id="carouselText">
-                  This simple math game was one of the first applications I had ever created back in September of 2019 (other than some guessing games like Hangman and a Psychic Game).
-                  It was a fun logic exercise that used HTML, CSS, and Javascript to create a front-end web app.
+                  The owner and directors of two Irvine Kumon centers asked me to assist them with updating their website, as it was written on Wordpress back in 2013 by an amateur web developer and friend of the Kumon owners... and hadn't been updated since.
                 </h6>
                 <h6 id="carouselText">
-                  While the application's styling shows apparent infancy in my mastery of CSS, I was reasonably proud of the JS logic behind this game! I've grown much as a developer since then.
+                  My initial goal for this front-end job was simply to make a few components mobile-responsive, but I took it upon myself to revamp almost every page on the site. As the outbreak of COVID-19 raged on, families enrolled at Irvine Kumon were in desperate need of updated, concise information; the centers had transitioned into contact-free homework and Zoom session classes, but the site was not informative enough of how these changes were implemented.
+                  I have stored each page's initial HTML code along with files documenting my changes in the Github repo.
                 </h6>
                 <h5 className="left">
-                  <a id="carouselLink" className="white-text btn black btn-small" href="https://davidwu92.github.io/Crystal-Collector-Math/" target="_blank">
-                    Visit Crystal Collector
+                  <a id="carouselLink" className="white-text btn black btn-small" href="http://irvinekumon.com" target="_blank">
+                    Visit Irvine Kumon
                   </a>
                   <span>  </span>
-                  <a id="carouselLink" className="white-text btn black btn-small" href="https://github.com/davidwu92/Crystal-Collector-Math" target="_blank">
+                  <a id="carouselLink" className="white-text btn black btn-small" href="https://github.com/davidwu92/irvineKumonFiles" target="_blank">
                     Visit Github Repo
                   </a>
                 </h5>
