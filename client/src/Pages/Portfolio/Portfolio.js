@@ -37,7 +37,7 @@ const Portfolio =()=>{
       <div className="container" id="pageContainer" style={{width:"100%"}}>
         <div id="pageTitle" className = "row center">
           <h1>Portfolio</h1>
-          <h6>Click a card for more info.</h6>
+          <h6>Click a card for more info, or click a black button to visit the project. My best/most-recent projects are listed first.</h6>
         </div>
 
       {/* ROWS OF APPS */}
@@ -205,7 +205,7 @@ const Portfolio =()=>{
                 Visit Harmonize
               </a>
               <span> </span>
-              <a className="white-text waves-effect waves-light btn black btn-small" href="https://github.com/davidwu92/Harmonize2" target="_blank">
+              <a className="white-text waves-effect waves-light btn black btn-small right" href="https://github.com/davidwu92/Harmonize2" target="_blank">
                 Visit Github
               </a>
             </div>
@@ -222,14 +222,13 @@ const Portfolio =()=>{
                 Visit Harmonize
               </a>
               <span> </span>
-              <a className="white-text waves-effect waves-light btn black btn-small" href="https://github.com/davidwu92/Harmonize2" target="_blank">
+              <a className="white-text waves-effect waves-light btn black btn-small right" href="https://github.com/davidwu92/Harmonize2" target="_blank">
                 Visit Github
               </a>
             </div>
           </div>
         </div>
         
-
         {/* LOST AND FOUND */}
         <div className="col s6 m3 l3">
           <div className="card"  style={{height:"auto"}}>
@@ -244,7 +243,7 @@ const Portfolio =()=>{
                 Visit LAF
               </a>
               <span> </span>
-              <a className="white-text waves-effect waves-light btn black btn-small" href="https://github.com/davidwu92/Project-Two" target="_blank">
+              <a className="white-text waves-effect waves-light btn black btn-small right" href="https://github.com/davidwu92/Project-Two" target="_blank">
                 Visit Github
               </a>
             </div>
@@ -253,7 +252,7 @@ const Portfolio =()=>{
               <p className="grey-text" style={{margin:"0px"}}>Stack: Express, Sequelize, NodeJS</p>
               <p className="grey-text" style={{margin:"0px"}}>NPM Packages: JSONWebToken, axios</p>
               <p style={{textIndent:"15px"}}>LAF is a full-stack Express-Sequelize app designed to digitize lost and found offices in any densely-populated settings and events.</p>                  
-              <p style={{textIndent:"15px"}}>I was the SCRUM master and repository owner, and I was responsible for much of the back end code: posting "found" items, building the database, and adding event settings.</p>                  
+              <p style={{textIndent:"15px"}}>I was the SCRUM master, idea-conceiver, and repository owner, and I was responsible for much of the back end code: posting "found" items, building the database, and adding event settings.</p>
               <p style={{textIndent:"15px"}}></p>                  
               <a className="white-text waves-effect waves-light btn black btn-small" href="https://the-laf-app.herokuapp.com/" target="_blank">
                 Visit LAF
@@ -266,39 +265,86 @@ const Portfolio =()=>{
           </div>
         </div>
 
+        {/* ZELDA TRIVIA */}
+        <div className="col s6 m3 l3">
+          <div className="card"  style={{height:"auto"}}>
+            <div className="card-content grey lighten-2 center" style={{padding:"5px"}}>
+              <span className="card-title activator black-text"><b>Zelda Trivia Game</b></span>
+            </div>
+            <div className="card-image" style={{height:"auto"}}>
+              <img className="activator" src={triviaGame}/>
+            </div>
+            <div className="card-content grey lighten-2" style={{padding:"3px"}}>
+              <a className="white-text waves-effect waves-light btn black btn-small" href="https://davidwu92.github.io/TriviaGame/" target="_blank">
+                Visit Zelda Trivia
+              </a>
+              <span> </span>
+              <a className="white-text waves-effect waves-light btn black btn-small right" href="https://github.com/davidwu92/TriviaGame" target="_blank">
+                Visit Github
+              </a>
+            </div>
+            <div className="card-reveal" style={{padding:"7px"}}>
+              <span className="card-title grey-text text-darken-4 center">Zelda Trivia<i className="material-icons right">close</i></span>
+              <p className="grey-text" style={{margin:"0px"}}>Stack: JS, HTML, CSS</p>
+              <p className="grey-text" style={{margin:"0px"}}>NPM Packages: moment.js, materialize</p>
+              <p style={{textIndent:"15px"}}>The Zelda Trivia Game is a front-end app I built one weekend from HTML, CSS and Javascript.</p>
+              <p style={{textIndent:"15px"}}>While it isn't the smoothest JS logic or the prettiest CSS I've ever written, Zelda Trivia is one of many early projects I created that show honest growth and provide snapshots of my early Javascript/DOM manipulation skills. In retrospect, the app is a pretty good effort for the five week mark!</p>
+              <p style={{textIndent:"15px"}}></p>                  
+              <a className="white-text waves-effect waves-light btn black btn-small" href="https://davidwu92.github.io/TriviaGame/" target="_blank">
+                Visit Zelda Trivia
+              </a>
+              <span> </span>
+              <a className="white-text waves-effect waves-light btn black btn-small" href="https://github.com/davidwu92/TriviaGame" target="_blank">
+                Visit Github
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* GIF FINDER */}
+        <div className="col s6 m3 l3">
+          <div className="card"  style={{height:"auto"}}>
+            <div className="card-content grey lighten-4 center" style={{padding:"5px"}}>
+              <span className="card-title activator black-text"><b>Anime GIF Finder</b></span>
+            </div>
+            <div className="card-image" style={{height:"auto"}}>
+              <img className="activator" src={animeGif}/>
+            </div>
+            <div className="card-content grey lighten-4" style={{padding:"3px"}}>
+              <a className="white-text waves-effect waves-light btn black btn-small" href="https://davidwu92.github.io/GIF-APIs/" target="_blank">
+                Visit GIF Finder
+              </a>
+              <span> </span>
+              <a className="white-text waves-effect waves-light btn black btn-small right" href="https://github.com/davidwu92/GIF-APIs" target="_blank">
+                Visit Github
+              </a>
+            </div>
+            <div className="card-reveal" style={{padding:"7px"}}>
+              <span className="card-title grey-text text-darken-4 center">Anime GIF Finder<i className="material-icons right">close</i></span>
+              <p className="grey-text" style={{margin:"0px"}}>Stack: JS, HTML, CSS</p>
+              <p className="grey-text" style={{margin:"0px"}}>NPM Packages: moment.js, materialize, axios</p>
+              <p style={{textIndent:"15px"}}></p>
+              <p style={{textIndent:"15px"}}></p>
+              <p style={{textIndent:"15px"}}></p>                  
+              <a className="white-text waves-effect waves-light btn black btn-small" href="https://davidwu92.github.io/GIF-APIs/" target="_blank">
+                Visit GIF Finder
+              </a>
+              <span> </span>
+              <a className="white-text waves-effect waves-light btn black btn-small" href="https://github.com/davidwu92/GIF-APIs" target="_blank">
+                Visit Github
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+
       </div>{/* END PORTFOLIO PROJECT ROW */}
 
 
         {/* CAROUSEL */}
         <div>
-        {/* <div class="carousel carousel-slider" onChange={onSlide}>
-
-          <div class="carousel-item" id="item6" href="#six!">
-            <div className="card" id="card">
-              <div id="pCardImage" className="card-image">
-                  <img  alt="Harmonize Screenshot" className="activator" src={triviaGame}/>
-              </div>
-              <div className="card-reveal" id="portfolioCardReveal">
-                <span className="card-title grey-text text-darken-4"><h5 id="profileCardRevealTitle">Zelda Trivia Game<i className="material-icons right">close</i></h5></span>
-                <h6 id="carouselText">
-                  The Zelda Trivia Game is a front-end app I built one weekend from HTML, CSS and Javascript.
-                </h6>
-                <h6 id="carouselText">
-                  While it isn't the smoothest JS logic or the prettiest CSS I've ever written, Zelda Trivia is one of many early projects I created that show honest growth and provide snapshots of my early Javascript/DOM manipulation skills.
-                  In retrospect, the app is a pretty good effort for the five week mark!
-                </h6>
-                <h5 className="left">
-                  <a id="carouselLink" className="white-text btn black btn-small" href="https://davidwu92.github.io/TriviaGame/" target="_blank">
-                    Visit Zelda Trivia
-                  </a>
-                  <span>  </span>
-                  <a id="carouselLink" className="white-text btn black btn-small" href="https://github.com/davidwu92/TriviaGame" target="_blank">
-                    Visit Github Repo
-                  </a>
-                </h5>
-              </div>
-            </div>
-          </div>
+        {/* 
 
           <div class="carousel-item" id="item7" href="#seven!">
             <div className="card" id="card">
@@ -317,29 +363,6 @@ const Portfolio =()=>{
                   </a>
                   <span>  </span>
                   <a id="carouselLink" className="white-text btn black btn-small" href="https://github.com/davidwu92/GIF-APIs" target="_blank">
-                    Visit Github Repo
-                  </a>
-                </h5>
-              </div>
-            </div>  
-          </div>
-
-          <div class="carousel-item" id="item8" href="#eight!">
-            <div className="card" id="card">
-              <div id="pCardImage" className="card-image">
-                  <img  alt="Harmonize Screenshot" className="activator" src={bamazon}/>
-              </div>
-              <div className="card-reveal" id="portfolioCardReveal">
-                <span className="card-title grey-text text-darken-4"><h5 id="profileCardRevealTitle">Bamazon<i className="material-icons right">close</i></h5></span>
-                <h6 id="carouselText">
-                  As one of my first backend CLI applications, Bamazon uses the terminal to simulate a storefront.
-                  It uses Javascript logic, a MySQL database, and inquirer.js for customer interactions in the terminal.
-                </h6>
-                <h6 id="carouselText">
-                  The user (customer) has the ability to place orders in the terminal, which in turn depletes the items in stock at the Bamazon warehouse and calculates a purchase total.
-                </h6>
-                <h5 className="left">
-                  <a id="carouselLink" className="white-text btn black btn-small" href="https://github.com/davidwu92/bamazon" target="_blank">
                     Visit Github Repo
                   </a>
                 </h5>
