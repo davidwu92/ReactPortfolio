@@ -33,17 +33,47 @@ const Portfolio =()=>{
   }
   return(
     <>
-      <div className="container" id="pageContainer">
+      <div className="container" id="pageContainer" style={{width:"100%"}}>
         <div id="pageTitle" className = "row center">
           <h1>Portfolio</h1>
-          <h6>Drag left or right to peruse some of my work. Click a screenshot for links and info.</h6>
+          {/* <h6>Drag left or right to peruse some of my work. Click a screenshot for links and info.</h6> */}
         </div>
-        {/* CAROUSEL */}
-        <div class="carousel carousel-slider" onChange={onSlide}>
-          {/* <div class="carousel-fixed-item center">
-            <a class="btn waves-effect white grey-text darken-text-2"></a>
-          </div> */}
 
+      {/* REMOVING THE CAROUSEL: Let's make cards. */}
+      <div className="row" style={{padding:"0"}}>
+            {/* PAYTRACK */}
+            <div className="col s6 m3 l3">
+              <div className="card"  style={{height:"auto"}}>
+                <div className="card-image" style={{height:"auto"}}>
+                  <img className="activator" src={payTrack}/>
+                </div>
+                <div className="card-content black" style={{padding:"5px"}}>
+                  <span className="card-title activator white-text center">PayTrack<i className="material-icons right">more_vert</i></span>
+                </div>
+                <div className="card-reveal" style={{padding:"7px"}}>
+                  <span className="card-title grey-text text-darken-4">PayTrack<i className="material-icons right">close</i></span>
+                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  <a className="white-text btn black btn-small" href="https://harmonizers.herokuapp.com/" target="_blank">
+                    Visit Paytrack
+                  </a>
+                  <span>  </span>
+                  <a className="white-text btn black btn-small" href="https://github.com/davidwu92/Harmonize2" target="_blank">
+                    Visit Github
+                  </a>
+                </div>
+              </div>
+            </div>
+      </div>
+
+
+        {/* CAROUSEL */}
+        <div>
+        {/* <div class="carousel carousel-slider" onChange={onSlide}>
+          
           <div class="carousel-item" id="item1" href="#one!">
             <div className="card" id="card">
               <div id="pCardImage" className="card-image">
@@ -257,6 +287,7 @@ const Portfolio =()=>{
             </div>  
           </div>
 
+        </div> */}
         </div>
       </div> {/* container end */}
     </>
