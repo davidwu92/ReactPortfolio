@@ -246,7 +246,7 @@ const Portfolio =()=>{
                 <p className="grey-text" style={{margin:"0px"}}>Stack: Mongo, Express, ReactJS, NodeJS</p>
                 <p className="grey-text" style={{margin:"0px"}}>NPM Packages: JSONWebToken, axios, bcrypt, nodemailer</p>
                 <p style={{textIndent:"15px"}}>My idea for this app was to create an online community for both amateur and professional musicians. I and two fellow UCI Coding Bootcamp students turned Harmonize into an ambitious networking application for musicians, allowing users to...</p>                  
-                <p style={{textIndent:"0px"}}><b>~</b>display recordings and performances into their public profile.</p>
+                <p style={{textIndent:"0px"}}><b>~</b>display recordings and performances on their public profile.</p>
                 <p style={{textIndent:"0px"}}><b>~</b>add/remove instruments/skills tags and search for other users by these tags.</p>
                 <p style={{textIndent:"0px"}}><b>~</b>create, edit, and remove postings for gig opportunities.</p>
                 <p style={{textIndent:"15px"}}>As a long-time pianist, coding this app became a huge passion project. I've put well over a hundred hours into this project alone, and I am responsible for front- and back-end development of the Search, Register, Gig Posting, and edit Profile features. I was also the SCRUM lord!</p>
