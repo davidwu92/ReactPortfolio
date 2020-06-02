@@ -12,6 +12,7 @@ import reactScraper from './ReactScraper.png'
 import bamazon from './Bamazon.png'
 import payTrack from './PayTrack.png'
 import liarsDice from './LiarsDice.png'
+import wukityper from './Wukityper.png'
 
 const Portfolio =()=>{
 
@@ -42,7 +43,42 @@ const Portfolio =()=>{
 
         {/* ROWS OF APPS */}
         <div className="row" style={{padding:"0"}}>
-          
+
+          {/* WUKITYPER */}
+          <div className="col s12 m3 l3">
+            <div className="card"  style={{height:"auto"}}>
+              <div className="card-content grey lighten-2 center" style={{padding:"5px"}}>
+                <span className="card-title activator black-text"><b>WukiTyper (Typing Test)</b></span>
+              </div>
+              <div className="card-image" style={{height:"auto"}}>
+                <img className="activator" src={wukityper}/>
+              </div>
+              <div className="card-content grey lighten-2" style={{padding:"3px"}}>
+                <a className="white-text waves-effect waves-light btn black btn-small" href="https://wukityper.herokuapp.com/" target="_blank">
+                  Visit WukiTyper
+                </a>
+                <span>  </span>
+                <a className="white-text waves-effect waves-light btn black btn-small right" href="https://github.com/davidwu92/TypeTest" target="_blank">
+                  Visit Github
+                </a>
+              </div>
+              <div className="card-reveal" style={{padding:"7px"}}>
+                <span className="card-title grey-text text-darken-4 center">WukiTyper<i className="material-icons right">close</i></span>
+                <p className="grey-text" style={{margin:"0px"}}>Stack: Express, ReactJS, NodeJS, Mongo</p>
+                <p className="grey-text" style={{margin:"0px"}}>NPM Packages: axios, toastify</p>
+                <p style={{textIndent:"15px"}}>This app uses the Wikimedia API to scrape Wikipedia articles and turn them into the words in a typing test. The test measures speed, accuracy, and other statistics on the user's typing ability; taking the test has an added bonus of potentially learning something new as the user types Wikipedia article summaries!</p>
+                <p style={{textIndent:"15px"}}>I built the entire app out myself in May of 2020. My goal was to practice and learn the code behind a simple typing test, such that I could build a new multiplayer typing-game application. The application works wonderfully, and you're welcome to shoot for a position on the Top 50 Leaderboards!</p>
+                <a className="white-text waves-effect waves-light btn black btn-small" href="https://wukityper.herokuapp.com/" target="_blank">
+                  Visit WukiTyper
+                </a>
+                <span>  </span>
+                <a className="white-text waves-effect waves-light btn black btn-small right" href="https://github.com/davidwu92/TypeTest" target="_blank">
+                  Visit Github
+                </a>
+              </div>
+            </div>
+          </div>        
+
           {/* LIARS DICE */}
           <div className="col s12 m3 l3">
             <div className="card"  style={{height:"auto"}}>
@@ -158,16 +194,18 @@ const Portfolio =()=>{
             </div>
           </div>
 
+          <div className="col s12 m12 l12"></div>
+
           {/* IRVINE KUMON */}
           <div className="col s12 m3 l3">
             <div className="card"  style={{height:"auto"}}>
-              <div className="card-content grey lighten-2 center" style={{padding:"5px"}}>
+              <div className="card-content grey lighten-4 center" style={{padding:"5px"}}>
                 <span className="card-title activator black-text"><b>Irvine Kumon Website</b></span>
               </div>
               <div className="card-image" style={{height:"auto"}}>
                 <img className="activator" src={irvineKumon}/>
               </div>
-              <div className="card-content grey lighten-2" style={{padding:"3px"}}>
+              <div className="card-content grey lighten-4" style={{padding:"3px"}}>
                 <a className="white-text waves-effect waves-light btn black btn-small" href="http://irvinekumon.com/" target="_blank">
                   Visit Irvine Kumon
                 </a>
@@ -175,21 +213,15 @@ const Portfolio =()=>{
               <div className="card-reveal" style={{padding:"7px"}}>
                 <span className="card-title grey-text text-darken-4 center">Irvine Kumon<i className="material-icons right">close</i></span>
                 <p className="grey-text" style={{margin:"0px"}}>Tech: HTML/CSS, Wordpress, GoDaddy</p>
-                <p style={{textIndent:"15px"}}>The outbreak of COVID-19 forced businesses all over the world to transition into remote or virtual operations; Kumon, a franchise-based after-school tutoring and education center, was among those heavily affected, as their classes were typically held in-person at crowded centers.</p>
-                <p style={{textIndent:"15px"}}>In March of 2020, the director of two Irvine Kumon centers asked me to fix up their website, as it hadn't had any significant updates since its creation in 2013 by an amateur web developer named Christine. They asked me to make the site mobile-responsive, and embed a few forms in certain pages.</p>
-                <p style={{textIndent:"15px"}}>But upon logging in with Christine's credentials, I found a phenomenally messy splatter of code and text. Massive, unformatted essays copy-pasted from mass emails, incoherently-ordered bullet points, dilapidated information on the business itself... the site was in dire need of revamping.</p>
-                <p style={{textIndent:"15px"}}>I wish I had a before-after to present here, but my priority was to get the site up and running ASAP; families sending their children to this business needed coherently-presented, clear information and steps outlined for them as the centers transitioned to online classes/homework.</p>
-                <p style={{textIndent:"15px"}}>Thanks to my front-end work, this site is now organized with color-coded info boxes, logically-placed links and menu items, and clear step-by-step tutorials.</p>
+                <p style={{textIndent:"15px"}}>Kumon is a franchise offering after-school tutoring and reinforcement programs. During the outbreak of COVID-19 in March 2020, the director of two Irvine Kumon centers asked me to fix up their website, as it hadn't had any significant updates since its creation in 2013 by an amateur web developer named Christine. I was asked to make the site mobile-responsive and embed some forms.</p>
+                <p style={{textIndent:"15px"}}>Upon logging into Wordpress with Christine's credentials, I found a phenomenally messy splatter of code and text: unformatted essays copy-pasted from mass emails, incoherently-ordered bullet points, dilapidated info on the business itself, etc. Clients (many of whom were immigrants with non-English primary languages) had trouble extracting essential information on the business' COVID-19 updates; this was debilitating to the business in a time of online-only client-staff interaction.</p>
+                <p style={{textIndent:"15px"}}>Thanks to my front-end work, the site is organized with color-coded info boxes, logically-placed links and menu items, and clear, step-by-step tutorials.</p>
                 <a className="white-text waves-effect waves-light btn black btn-small" href="http://irvinekumon.com/" target="_blank">
                   Visit Irvine Kumon
                 </a>
               </div>
             </div>
           </div>
-
-          <div className="col s12 m3 l3"></div>
-          <div className="col s12 m3 l3"></div>
-          <div className="col s12 m3 l3"></div>
 
           {/* HARMONIZE */}
           <div className="col s12 m3 l3">
@@ -304,13 +336,13 @@ const Portfolio =()=>{
           {/* GIF FINDER */}
           <div className="col s12 m3 l3">
             <div className="card"  style={{height:"auto"}}>
-              <div className="card-content grey lighten-4 center" style={{padding:"5px"}}>
+              <div className="card-content grey lighten-2 center" style={{padding:"5px"}}>
                 <span className="card-title activator black-text"><b>Anime GIF Finder</b></span>
               </div>
               <div className="card-image" style={{height:"auto"}}>
                 <img className="activator" src={animeGif}/>
               </div>
-              <div className="card-content grey lighten-4" style={{padding:"3px"}}>
+              <div className="card-content grey lighten-2" style={{padding:"3px"}}>
                 <a className="white-text waves-effect waves-light btn black btn-small" href="https://davidwu92.github.io/GIF-APIs/" target="_blank">
                   Visit GIF Finder
                 </a>
@@ -323,8 +355,8 @@ const Portfolio =()=>{
                 <span className="card-title grey-text text-darken-4 center">Anime GIF Finder<i className="material-icons right">close</i></span>
                 <p className="grey-text" style={{margin:"0px"}}>Stack: JS, HTML, CSS</p>
                 <p className="grey-text" style={{margin:"0px"}}>NPM Packages: moment.js, materialize, axios</p>
-                <p style={{textIndent:"15px"}}></p>
-                <p style={{textIndent:"15px"}}></p>
+                <p style={{textIndent:"15px"}}>This was one of the earlier assignments given to us at the UC Irvine Coding Bootcamp, designed to help familiarize us with AJAX/API requests.</p>
+                <p style={{textIndent:"15px"}}>While my JS and CSS abilities were still in their developing stages, this project provides honest insight about my growing sense of UI/UX elements and my perseverance as logic-oriented problem-solver. In retrospect, I'm proud of how much I had learned in just a few months' coding, and I continue to use the skills learned from this assignment today.</p>
                 <p style={{textIndent:"15px"}}></p>                  
                 <a className="white-text waves-effect waves-light btn black btn-small" href="https://davidwu92.github.io/GIF-APIs/" target="_blank">
                   Visit GIF Finder
