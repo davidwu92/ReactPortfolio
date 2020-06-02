@@ -356,7 +356,7 @@ const Portfolio =()=>{
                 <p className="grey-text" style={{margin:"0px"}}>Stack: JS, HTML, CSS</p>
                 <p className="grey-text" style={{margin:"0px"}}>NPM Packages: moment.js, materialize, axios</p>
                 <p style={{textIndent:"15px"}}>This was one of the earlier assignments given to us at the UC Irvine Coding Bootcamp, designed to help familiarize us with AJAX/API requests.</p>
-                <p style={{textIndent:"15px"}}>While my JS and CSS abilities were still in their developing stages, this project provides honest insight about my growing sense of UI/UX elements and my perseverance as logic-oriented problem-solver. In retrospect, I'm proud of how much I had learned in just a few months' coding, and I continue to use the skills learned from this assignment today.</p>
+                <p style={{textIndent:"15px"}}>This project provides honest insight about my growing sense of UI/UX elements and my perseverance as logic-oriented problem-solver, even in my early days at the UCI Bootcamp. I continue to use the skills learned from this assignment today.</p>
                 <p style={{textIndent:"15px"}}></p>                  
                 <a className="white-text waves-effect waves-light btn black btn-small" href="https://davidwu92.github.io/GIF-APIs/" target="_blank">
                   Visit GIF Finder
