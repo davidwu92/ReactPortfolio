@@ -3,6 +3,20 @@ const express = require('express')
 const { join } = require('path')
 const app = express()
 
+// const { MongoClient } = require('mongodb');
+// const uri = "mongodb+srv://davidwu92:GvVdUU0IBOZgSSgL@davidportfoliocluster.cnri8.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+// const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+// client.connect(err => {
+//   const collection = client.db("test").collection("devices");
+//   // perform actions on the collection object
+//   client.close();
+// });
+
+
+// const uri = "mongodb+srv://USERNAME:PASSWORD@CLUSTER_NAME.n9z04.mongodb.net/DATABASE_NAME?retryWrites=true&w=majority";
+var connectionString = "mongodb+srv://davidwu92:<password>@davidportfoliocluster.cnri8.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+
+
 const mongoURI = process.env.NODE_ENV === 'production' ? process.env.MONGODB_URI : 'mongodb://localhost/portfoliodb'
 const mongoose = require('mongoose')
 const conn = mongoose.createConnection(mongoURI, {
