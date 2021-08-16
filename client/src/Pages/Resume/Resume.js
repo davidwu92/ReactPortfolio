@@ -1,6 +1,6 @@
 import React from 'react'
 import resume from './Resume.png'
-import resumepdf from './TxtResume2020.pdf'
+import resumepdf from './Wu_David_Resume_2021.pdf'
 import './resume.css'
 
 const Resume = () => {
