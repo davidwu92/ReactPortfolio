@@ -48,7 +48,7 @@ app.get('*', (req, res) => res.sendFile(join(__dirname, 'client', 'build', 'inde
 
 /*<<<<<<< MONGO CLIENT ATTEMPT >>>>>>*/
 // const { MongoClient } = require('mongodb');
-// const uri = "mongodb+srv://davidwu92:GvVdUU0IBOZgSSgL@davidportfoliocluster.cnri8.mongodb.net/DavidPortfolioCluster?retryWrites=true&w=majority";
+// const uri = "mongodb+srv://davidwu92:GvVdUU0IBOZgSSgL@davidportfoliocluster.cnri8.mongodb.net/portfoliodb?retryWrites=true&w=majority";
 // const uri2 = process.env.NODE_ENV === 'production' ? process.env.MONGODB_URI : 'mongodb://localhost/portfoliodb'
 // const client = new MongoClient(uri,
 //   {
